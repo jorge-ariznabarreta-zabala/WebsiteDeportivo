@@ -1,39 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Portafolio ZGuedest</title>
 </head>
 <body>
-    <header> menu de navegación comun a todas la paginas</header> 
-    
-    <main>información que queremos</main>
+  <header>
+    <!-- -----------menú de navegación ----------------->
+    <div class="menu__bar flex">
+      <div id="title__bar">
+        <a href=""><img class="logo" src="./img/logo-sdamorebieta.jpg" alt="Logo"></a>
+        <h3>AmoreFut </h3>
+      </div>
+      <div class="menuBar__flexBox flex">
+        <div> <a href="">Equipos </a> </div>
+        <div> <a href="">Club</a> </div>
+        <div> <a href="">Noticias </a> </div> 
+        <div> <a href="">Tienda </a> </div>
+      </div> 
+    </div>
+  </header>
+  <main>
+    <!-- -----------Equipos Resumen-----------------> 
+    <div class= "equipos">
+      <h1>Equipos</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Animi, porro maiores? Ad eos recusandae odio doloribus vitae vel debitis numquam.
+        Ab ullam consequatur dolores? Voluptatibus provident earum dicta facere illo ex 
+        reiciendis assumenda ullam quidem debitis aspernatur neque fugit sed suscipit incidunt, 
+        inventore rerum commodi? Dolore voluptas aperiam hic alias magnam consectetur qui illum 
+        quo dignissimos laborum aliquam ratione est soluta, quod sint quas aut magni optio culpa. 
+        Ducimus, corporis?</p>
+    </div>
+    <!-- -----------Club Historia -----------------> 
+    <div class= "club">
+        <h2>SOBRE NOSOTROS</h2>
 
+        <div class="about__flex  flex">
+            <div class="about__flex__item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Animi, porro maiores? Ad eos recusandae odio doloribus vitae vel debitis numquam.
+                    Ab ullam consequatur dolores? Voluptatibus provident earum dicta facere illo ex 
+                    reiciendis assumenda ullam quidem debitis aspernatur neque fugit sed suscipit incidunt, 
+                    inventore rerum commodi? Dolore voluptas aperiam hic alias magnam consectetur qui illum 
+                    quo dignissimos laborum aliquam ratione est soluta, quod sint quas aut magni optio culpa. 
+                    Ducimus, corporis?</p>
+            </div>
 
+            <div class="about__flex__item">
+                <img class= "ico" src="./img/download.png" alt="download">
+            </div>
+        </div> 
+ 
+    </div>
+    <!-------------Promociones y Noticias -----------------> 
+    <div class= "promociones">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>REDES y CONTACTO <br>
-        PATROCINADORES <br>
-        LEGAL Y COPYRIGHT <br> comun a todas la paginas</footer>
+        <h2>PROMOCIONES Y NOTICIAS</h2>
+        <div class="gridd">
+            
+        </div>
+    </div>
+    <!-- -----------Contact -----------------> 
+    <div class= "contact">
+      <h2>Contáctanos</h2>
+      <form  action="" method="get">
+        <label class = "label" for="Name">Name</label>
+        <input type="text" name="textName" id="textName" required>
+        <label class = "label" for="Email">Email</label>
+        <input type="text" name="textEmail" id="textEmail" required>
+        <label for="Message">Message</label>
+        <textarea name="Message" id="" cols="30" rows="8"></textarea>
+        <input type="submit">
+      </form>
+    </div>
+  </main>
 </body>
+
+<footer>
+
+    <div class="foot__redes">
+        <div class="foot__redes__flexBox flex">
+            <a href="https://www.linkedin.com/"><img class= "ico" src="./img/linkedin-social.png" alt="linkedin"></a>
+            <a href="https://www.facebook.com/"><img class= "ico" src="./img/facebook-social.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img class= "ico" src="./img/instagram-social (1).png" alt="instagram"></a>
+        </div>
+
+    </div>
+
+    <div class="foot__patrocinadores">
+        <div class="foot__patrocinadores__gridd  gridd">
+            <h2>Patrocinadores</h2>
+        </div>
+    </div>
+
+    <div class="foot__legal">
+        <div id="copyRight"> &copy; Amorebieta 2022</div>
+
+        <div class="foot__legal__flex  flex">
+            <div> <a href="">Política de Privacidad </a> </div>
+            <div> <a href="">Política de Cookies</a> </div>
+            <div> <a href="">Aviso Legal </a> </div> 
+        </div>
+
+    </div>
+
+</footer>
 </html>
