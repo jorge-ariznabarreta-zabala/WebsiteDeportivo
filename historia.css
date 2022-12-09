@@ -2,12 +2,12 @@
     margin: 0;
     padding:0;
 }
+.amorobieta{
+padding: 2rem;
+
+}
 
 .estadio-imgen img{
     width: 20rem ;
-    height: 17rem  ;
-  
-    padding: 5rem;
-   
-   
+    height: 17rem  ;  
 }
