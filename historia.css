@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.estadio-imgen img{
+    width: 20rem ;
+    height: 17rem  ;
+  
+    padding: 5rem;
+   
+   
+}
