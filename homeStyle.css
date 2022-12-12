@@ -16,7 +16,7 @@ html, body {
 }
 
 
-.gridd{
+.gridd_home{
     display: grid;
     grid-template-columns: 80% 20%;
     /* grid-row: 5% 30% auto auto 10%; */
@@ -24,7 +24,7 @@ html, body {
 }
 
 
-.gridd__item{
+.gridd_home_item{
     border: 4px solid  black;
     text-align: center;
     /* line-height: 150px; */
@@ -46,11 +46,11 @@ html, body {
     /* gap: 1rem; */
 } 
 
-.flex__item{
+.flex_body_item{
     border: solid black;
 }
 
-.about__flex_item_img{
+.about_img{
     
      width: 100%;  
 
@@ -141,9 +141,8 @@ input , textarea{
 /*-----------------------------footer-------------------------------------*/
 
 #footer{
-    /* background-color: forestgreen;  */
     grid-column: 1/3;
-
+    /* background-image: url(https://sdamorebieta.eus/wp-content/uploads/2022/09/urritxe-corner.jpg); */
 }
 
 
@@ -165,10 +164,14 @@ h1{
 }
 
 .foot__legal{
-    background-color: cornflowerblue; 
+    background-color: cornflowerblue;  
 }
 
 h2{
     padding: 2rem 0 2rem 0;
+}
+
+.foot__redes{
+    background-image: url(https://sdamorebieta.eus/wp-content/uploads/2022/09/urritxe-corner.jpg); 
 }
 
