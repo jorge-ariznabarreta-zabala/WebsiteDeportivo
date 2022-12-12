@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -70,18 +71,28 @@ a{
     background-repeat: no-repeat; 
     background-size: cover;
 
-    text-align: center;
+    /* text-align: center; */
 
     height: 40rem;
     grid-column: 1/3;
+
+    fill: #fff;
+    mask: url(#hero-home-mask);
 
 }
 
 #menu{
     justify-content: space-around;
     grid-column: 1/3;
+    padding-top: 3rem;
+    /* background-color: cornflowerblue;  */
 
 
+}
+
+.logo{
+    position: relative;
+    width: 100%;
 }
 
 /*-----------------------------Formulario-------------------------------------*/
@@ -123,7 +134,7 @@ input , textarea{
 /*-----------------------------footer-------------------------------------*/
 
 #footer{
-    background-color: brown; 
+    /* background-color: forestgreen;  */
     grid-column: 1/3;
 
 }
@@ -131,6 +142,26 @@ input , textarea{
 
 h1{
     color:white;
-    font-size: 30px;
-    text-align: center;
+    position: relative;
+    font-size: 50px;
+    padding-left: 0%;
 }
+
+.foot__patrocinadores > h2{
+    padding-bottom: 0;
+    padding-top: 2rem;
+
+}
+
+.patrocinador{
+    width: 15rem;
+}
+
+.foot__legal{
+    background-color: cornflowerblue; 
+}
+
+h2{
+    padding: 2rem 0 2rem 0;
+}
+
