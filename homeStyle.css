@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -51,8 +52,8 @@ html, body {
 
 .about__flex_item_img{
     
-    /* flex-basis: 20%;  */
-     width: 20%;  
+    flex-basis: 20%; 
+     /* width: 20%;   */
 }
 
 
@@ -80,8 +81,14 @@ a{
 #menu{
     justify-content: space-around;
     grid-column: 1/3;
+    background-color: cornflowerblue; 
 
 
+}
+
+.logo{
+    position: relative;
+    width: 100%;
 }
 
 /*-----------------------------Formulario-------------------------------------*/
@@ -123,7 +130,7 @@ input , textarea{
 /*-----------------------------footer-------------------------------------*/
 
 #footer{
-    background-color: brown; 
+    background-color: forestgreen; 
     grid-column: 1/3;
 
 }
@@ -134,3 +141,8 @@ h1{
     font-size: 30px;
     text-align: center;
 }
+
+.patrocinador{
+    width: 15rem;
+}
+
