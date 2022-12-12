@@ -1,3 +1,20 @@
-h1{
-    flex-direction: row;    
+.fotosCategorias{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+  
 }
+
+body{
+    background-image: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
+}
+
+.foto1 img{
+  
+}
+
+.fotosCategorias{
+
+}
+
+
