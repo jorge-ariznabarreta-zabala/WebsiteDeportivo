@@ -13,7 +13,7 @@ padding: 2rem;
     text-align: center;
     font-weight: bold;
     color: aliceblue;
-    text-decoration: none;
+    list-style: none;
 }
 
 span{
