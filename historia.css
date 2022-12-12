@@ -6,35 +6,50 @@
 .amorobieta{
 padding: 2rem;
 
-}.header{
-    padding: 1rem;
+}.datos{
+    padding: 2rem;
     background-image: url("./img/amorobieta-4.jpeg");
     font-size: 2rem;
-    text-align: center;
+    text-align: start;
     font-weight: bold;
     color: aliceblue;
-    list-style: none;
+   
+  
+    
+}.amorbi {
+    display: flex;
+    justify-content: center;
+
+}
+.amorbi img{
+    width: 15rem;
+    
+}
+.trofeos{
+    padding: 3rem;
+}
+
+.trofeos h3{
+    font-size: 2rem;
+    
+
+
+}.estadio{
+    padding: 3rem;
 }
 
 span{
     color: rgb(115, 18, 206);
 }
 
+.estadio-imagen {
+display: flex;
+flex-wrap: wrap-reverse;
 
-.estadio-imgen img{
-    width: 20rem ;
-    height: 17rem  ; 
-
-}.estadio-imgen{
-    
-   display: grid;
-  grid-template-columns: auto auto;
-  padding-left: 10rem;
-  
    
-}.estadio-imgen{
- gap: 2rem;
-border-radius: 1.5rem;
+}
+.estadio-imagen img{
+    width: 50%;
 }
  .liga {
    display: flex;
@@ -44,7 +59,7 @@ border-radius: 1.5rem;
     text-align: center;
     border-radius: 10%;
     padding-bottom: 2rem;
- } .text{
+ } .historia{
     padding: 2rem;
     margin: 2rem;
  }
