@@ -52,8 +52,8 @@ html, body {
 
 .about__flex_item_img{
     
-    flex-basis: 20%; 
-     /* width: 20%;   */
+    /* flex-basis: 20%;  */
+     width: 20%;  
 }
 
 
@@ -130,7 +130,7 @@ input , textarea{
 /*-----------------------------footer-------------------------------------*/
 
 #footer{
-    background-color: forestgreen; 
+    /* background-color: forestgreen;  */
     grid-column: 1/3;
 
 }
@@ -142,7 +142,21 @@ h1{
     text-align: center;
 }
 
+.foot__patrocinadores > h2{
+    padding-bottom: 0;
+    padding-top: 2rem;
+
+}
+
 .patrocinador{
     width: 15rem;
+}
+
+.foot__legal{
+    background-color: cornflowerblue; 
+}
+
+h2{
+    padding: 2rem 0 2rem 0;
 }
 
