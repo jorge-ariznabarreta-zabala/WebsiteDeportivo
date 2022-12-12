@@ -52,8 +52,15 @@ html, body {
 
 .about__flex_item_img{
     
-    /* flex-basis: 20%;  */
-     width: 20%;  
+     width: 100%;  
+
+}
+.about__flex_item{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    border: solid black;
+
 }
 
 
