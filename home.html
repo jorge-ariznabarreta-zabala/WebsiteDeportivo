@@ -9,27 +9,28 @@
 
 </head>
 <body>
-    <div class="gridd">
+    <div class="gridd_home">
 
     <!-------------HEADER -----------------> 
-        <header class="gridd__item" id="header">
+        <header class="gridd_home_item" id="header">
             <div class="flex_row" id="menu">
-                <a href="home.html"><img class="logo" src="https://sdamorebieta.eus/wp-content/uploads/2021/10/logo-sdamorebieta.svg" alt="Logo"></a>
-                <h1>AmoreFoot</h1>
-
+                <div class="menu_logo flex_row">
+                    <a href="home.html"><img class="logo" src="https://sdamorebieta.eus/wp-content/uploads/2021/10/logo-sdamorebieta.svg" alt="Logo"></a>
+                    <h1>AmoreFoot</h1>
+                </div>
                 <nav class="flex_row">
                     <div> <a href="equipo.html">Equipos </a> </div>
                     <div> <a href="historia.html">Club</a> </div>
-                    <div> <a href="noticias.html">Noticias </a> </div> 
+                    <div> <a href="actualidad.html">Noticias </a> </div> 
                     <div> <a href="tienda.html">Tienda </a> </div>
                 </nav> 
             </div>
         </header> 
     <!-------------BODY -----------------> 
         <main>
-            <div class="gridd__item flex_colum">
+            <div class="gridd_home_item flex_colum">
                 <!-- -----------Equipos Resumen-----------------> 
-                <div class= "equipos flex__item">
+                <div class= "equipos flex_body_item">
                   <h2>Equipos</h2> <!--Ya hay un h1 en header-->
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Animi, porro maiores? Ad eos recusandae odio doloribus vitae vel debitis numquam.
@@ -40,11 +41,12 @@
                     Ducimus, corporis?</p>
                 </div>
                 <!-- -----------Club Historia -----------------> 
-                <div class= "club flex__item" > 
+                <div class= "club flex_body_item" > 
                     <h2>SOBRE NOSOTROS</h2>
             
-                    <div class="about__flex  flex_row"> 
-                        <p class=" about__flex_item about__flex_item_description">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                    <div class="flex_row"> 
+                        <div>
+                            <p class=" about__flex_item about__flex_item_description">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
                                 consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
                                 dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem 
                                 ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum 
@@ -53,12 +55,14 @@
                                 ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
                                 excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
                                 mollitia animi, id est laborum et dolorum fuga.</p>
-                        <img class= "about__flex_item about__flex_item_img " src="./img/perrito.png" alt="perrito">
+                        </div>
+                        <div><img class= "about__flex_item about_img " src="./img/perrito.png" alt="perrito"></div>
+                        
                     </div>  
              
                 </div>
                 <!-------------Promociones y Noticias -----------------> 
-                <div class= "promociones flex__item">
+                <div class= "promociones flex_body_item">
             
                     <h2>PROMOCIONES Y NOTICIAS</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -71,7 +75,7 @@
 
                 </div>
                 <!-- -----------Contact -----------------> 
-                <div class= "contact flex__item">
+                <div class= "contact flex_body_item">
                   <h2>Contáctanos</h2>
                   <form  action="" method="get">
                     <label class = "label" for="Name">Name</label>
@@ -88,16 +92,16 @@
         </main> 
     <!-------------SIDEBAR -----------------> 
 
-        <div id="sidebar" class="gridd__item">
+        <div id="sidebar" class="gridd_home_item">
             sidebar
         </div>
 
     <!-------------FOOTER -----------------> 
-        <footer id= "footer" class="gridd__item  flex_colum">
+        <footer id= "footer" class="gridd_home_item ">
 
-            <h2>Síguenos en nuestras Redes Sociales</h2>
             <div class="foot__redes">
-                <div class="foot__redes__flexBox flex_row">
+                <h2>Síguenos en nuestras Redes Sociales</h2>
+                <div class="foot_redes_ico">
                     <a href="https://www.linkedin.com/"><img class= "ico" src="./img/linkedin.svg" alt="linkedin"></a>
                     <a href="https://www.facebook.com/"><img class= "ico" src="./img/facebook.svg" alt="facebook"></a>
                     <a href="https://www.instagram.com/"><img class= "ico" src="./img/instagram.svg" alt="instagram"></a>
@@ -105,7 +109,6 @@
                     <a href="https://www.youtube.com/"><img class= "ico" src="./img/youtube.svg" alt="youtube"></a>
                     <a href="https://www.tiktok.com/"><img class= "ico" src="./img/tiktok.svg" alt="tiktok"></a>
                 </div>
-        
             </div>
         
             <div class="foot__patrocinadores">
@@ -115,9 +118,6 @@
                     <a href="https://www.beotibar.net/"><img class="patrocinador" src="https://www.beotibar.net/wp-content/uploads/2021/01/beotibar-logotipo.png" alt="Beotibar Recycling"></a>
                     <a href="https://www.caixabank.es/"><img class="patrocinador" src=".\img\Logo-CaixaBank--500x281.png" alt="Caixabank"></a>
             </div>
-
-
-            <!-- <img width="250" height="130" src="https://baturamobile.com/wp-content/uploads/2022/01/lointek-logo-gris.png"> -->
         
             <div class="foot__legal">
                 <div id="copyRight"> &copy; Amorebieta 2022</div>
