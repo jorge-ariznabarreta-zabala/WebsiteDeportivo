@@ -1,20 +1,180 @@
+
+   
+
+
 .fotosCategorias{
     display: grid;
-    grid-template-columns: auto auto;
-    
-  
+    grid-template-columns: auto auto;  
 }
 
 body{
     background-image: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
 }
 
-.foto1 img{
+
+.futPro{
+    width: 90%;
+    height: 90%;
+}
+
+.femFutPro{
+    width: 90%;
+    height: 90%;
+}
+
+.futJuv{
+    width: 90%;
+    height: 90%;
+}
+
+.futInfantil{
+    width: 90%;
+    height: 90%;
+}
+
+/*menu*/
+
+.menu {
+    
+    
+    height: auto;
+    width: 80%;
+    margin: 0;
+    overflow: hidden;
+  }
   
-}
+  /* Bordes superiores */
+  
+  .menu.mascPro {
+    border-top: #2f00ff 0.3em solid;
+  }
+  
+  .menu.inf {
+    border-top: #b81800 0.3em solid;
+  }
+  
+  .menu.juv {
+    border-top: #00a53c 0.3em solid;
+  }
+  
+  .menu.femPro {
+    border-top: #9600b4 0.3em solid;
+  }
+  
+  /* Atributos y transición */
+  
+  .menu > span {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+  }
+  
+  .menu:after, .menu > span > span {
+    display: block;
+    text-align: center;
+    border-radius: 0em;
+    padding: 2em 0 1.5em;
+  }
+  
+  .menu:after {
+    content: attr(data-title);
+    width: 100%;
+    background: #000;
+    color: #fff; 
+  }
+  
+  .menu > span > span {
+    width: 120px;
+    color: #fff;
+  }
+  
+  .menu.mascPro > span > span {
+    background: #2f00ff;
+  }
+  
+  .menu.juv > span > span {
+    background: #00a53c;
+  }
+  
+  .menu.inf > span > span {
+    background: #b81800;
+  }
+  
+  .menu.femPro > span > span {
+      background: #9600b4;
+  }
+  
+  /* Lo que pasa con hover */
+  
+  .menu:hover > span {
+      height: 100%; 
+  }
+  
+  /* Dando formato a lista */ 
+  
+  ul {
+    display: flex;
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.fotosCategorias{
+  ul li{
+    width: 7rem;
+    height: 15rem;
+  }
+  
+  li a {
+    display: inline;
+    float: left;
+    text-decoration: none;
+    font-family: sans;
+  }
 
-}
+  /*Transiciones Imagenes*/
+
+  .futPro{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: black;
+  }
+  .futPro:hover{
+    padding: 30px;
+  }
+
+  .femFutPro{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: black;
+  }
+  .femFutPro:hover{
+    padding: 30px;
+  }
+
+  .futJuv{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: black;
+  }
+  .futJuv:hover{
+    padding: 30px;
+  }
+
+  .futInfantil{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: black;
+  }
+  .futInfantil:hover{
+    padding: 30px;
+  }
+
 
 
