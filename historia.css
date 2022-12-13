@@ -18,6 +18,7 @@ ol {
 .datos {
   padding: 2rem;
   background-image: url("./img/amorobieta-4.jpeg");
+  background-repeat: inherit;
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
@@ -68,10 +69,13 @@ span {
 .estadio-imagen {
   display: flex;
   flex-wrap: wrap-reverse;
+  gap: 0,5rem;
+margin: 2rem ;
 }
 
 .estadio-imagen img {
   width: 50%;
+
 }
 
 .estadio-img h2 {
@@ -85,15 +89,20 @@ span {
   padding-bottom: 2rem;
 }
 
-.liga-1 {
+.liga-1{
   text-align: center;
+;
+}
+.liga-1 img{
   border-radius: 10%;
   padding-bottom: 2rem;
+  width:50rem;
+  
 }
 
 .historia {
   padding: 2rem;
-  margin: 2rem;
+
 }
 .historia{
   background-image: url("./img/amorobieta-4.jpeg");
