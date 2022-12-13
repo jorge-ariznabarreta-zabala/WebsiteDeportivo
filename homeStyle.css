@@ -36,6 +36,7 @@ html, body {
 .flex_row{
     display: flex;
     justify-content:center;
+    flex-wrap: wrap;
     gap: 2rem;
 } 
 
@@ -48,6 +49,8 @@ html, body {
 
 .flex_body_item{
     border: solid black;
+    /* padding-top: 2rem; */
+
 }
 
 .about_img{
@@ -65,7 +68,7 @@ html, body {
 
 
 a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -83,37 +86,35 @@ a{
     height: 40rem;
     grid-column: 1/3;
 
-    fill: #fff;
-    mask: url(#hero-home-mask);
-
 }
 
 #menu{
     justify-content: space-around;
     grid-column: 1/3;
     padding-top: 3rem;
-    /* background-color: cornflowerblue;  */
-
-
+    transition: 0.7s;
+    background-color: white;
+    opacity:0.9;
+    background: rgba(255, 122, 89, .5);
 }
 
 .menu_logo{
  /* text-align: center;
  justify-content: center; */
- gap:0;
+ gap:1rem;
 }
 
 .logo{
     position: relative;
-    width: 80%;
+    width: 100%;
 }
 
 
 h1{
-    color:white;
+    color:transparent;
     position: relative;
-    font-size: 30px;
-    padding-top: 12%;
+    font-size: 40px;
+    padding-top: 12%; 
 }
 
 /*-----------------------------Formulario-------------------------------------*/
@@ -157,13 +158,7 @@ input , textarea{
 #footer{
     grid-column: 1/3;
     /* background-image: url(https://sdamorebieta.eus/wp-content/uploads/2022/09/urritxe-corner.jpg); */
-}
-
-
-
-.foot__patrocinadores > h2{
-    padding-bottom: 0;
-    padding-top: 2rem;
+    background: linear-gradient(to right, rgb(48, 7, 231), rgba(255, 122, 89,0));
 
 }
 
@@ -172,14 +167,15 @@ input , textarea{
 }
 
 .foot__legal{
-    background-color: cornflowerblue;  
+    /* background-color: cornflowerblue;   */
 }
 
 h2{
-    padding: 2rem 0 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .foot__redes{
-    background-image: url(https://sdamorebieta.eus/wp-content/uploads/2022/09/urritxe-corner.jpg); 
+    /* background-image: url(https://sdamorebieta.eus/wp-content/uploads/2022/09/urritxe-corner.jpg);  */
 }
 
