@@ -1,7 +1,4 @@
 
-   
-
-
 .fotosCategorias{
     display: grid;
     grid-template-columns: auto auto;  
@@ -13,23 +10,23 @@ body{
 
 
 .futPro{
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
 }
 
 .femFutPro{
-    width: 90%;
-    height: 90%;
+    width: 65%;
+    height: 65%;
 }
 
 .futJuv{
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
 }
 
 .futInfantil{
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
 }
 
 /*menu*/
@@ -126,12 +123,8 @@ body{
     padding: 0;
   }
 
-  ul li{
-    width: 7rem;
-    height: 15rem;
-  }
-  
-  li a {
+ 
+    li a {
     display: inline;
     float: left;
     text-decoration: none;
@@ -143,38 +136,80 @@ body{
   .futPro{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: black;
+    background-color: rgb(34, 58, 177);
   }
   .futPro:hover{
-    padding: 30px;
+    padding: 4rem;
   }
 
   .femFutPro{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: black;
+    background-color: rgb(34, 58, 177);;
   }
   .femFutPro:hover{
-    padding: 30px;
+    padding: 4rem;
   }
 
   .futJuv{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: black;
+    background-color: rgb(34, 58, 177);;
   }
   .futJuv:hover{
-    padding: 30px;
+    padding: 4rem;
   }
 
   .futInfantil{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: black;
+    background-color: rgb(34, 58, 177);;
   }
   .futInfantil:hover{
-    padding: 30px;
+    padding: 4rem;
   }
 
+  /* Texto calendario*/
+
+  .amorePro{     
+    border: black 1rem solid;
+    margin: 5rem;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .amoreFem{
+    border: black 1rem solid;
+    margin: 5rem;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+
+  .amoreJuv{
+    border: black 1rem solid;
+    margin: 5rem;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+
+  .amoreInf{
+    border: black 1rem solid;
+    margin: 5rem;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+
+  /*Titulos (h2)*/
+
+  h2{
+    font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+
+  
 
 
