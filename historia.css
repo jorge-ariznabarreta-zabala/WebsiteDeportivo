@@ -67,14 +67,18 @@ span {
 }
 
 .estadio-imagen {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  gap: 0,5rem;
-margin: 2rem ;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 5rem;
+  
+
 }
 
-.estadio-imagen img {
-  width: 50%;
+.estadio-imagen a img{
+ width: 50rem;
+ height:30rem ;
+ padding: 1rem;
+ border-radius: 0.5rem;
 
 }
 
