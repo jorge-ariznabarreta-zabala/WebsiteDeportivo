@@ -1,89 +1,101 @@
 @charset "utf-8";
-*{
-    margin: 0;
-    padding:0;
-}
-ul,ol{
-    list-style: none;
-    padding-left: 0;
-}
-.amorobieta{
-padding: 2rem;
 
-}.datos{
-    padding: 2rem;
-    background-image: url("./img/amorobieta-4.jpeg");
-    font-size: 2rem;
-    text-align: center;
-    font-weight: bold;
-    color: aliceblue;
-  
-    
-}.amorbi {
-    display: flex;
-    justify-content: center;
-
-}
-.amorbi img{
-    width: 15rem;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
-.trofeos{
-    padding: 3rem;
-    text-align: center;
-  
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
 }
 
-.trofeos h3{
-    font-size: 3rem;
-
-}.trofeos li{
-    padding: 1em;
-    font-size: 1.5rem;
+.amorobieta {
+  padding: 2rem;
 }
 
-.estadio{
-    padding: 3rem;
-    text-align: center;
+.datos {
+  padding: 2rem;
+  background-image: url("./img/amorobieta-4.jpeg");
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
 }
+
+.amorbi {
+  display: flex;
+  justify-content: center;
+}
+
+.amorbi img {
+  width: 15rem;
+}
+
+.trofeos {
+  padding: 3rem;
+  text-align: center;
+}
+
+.trofeos h3 {
+  font-size: 3rem;
+}
+
+.trofeos li {
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+.estadio {
+  padding: 3rem;
+  text-align: center;
+}
+
 .estadio h3 {
-font-size: 3rem;
-}
-.estadio li{
-    padding: 1em;
-    font-size: 1.5rem;
+  font-size: 3rem;
 }
 
+.estadio li {
+  padding: 1em;
+  font-size: 1.5rem;
+}
 
-span{
-    color: rgb(115, 18, 206);
+span {
+  color: rgb(115, 18, 206);
 }
 
 .estadio-imagen {
-display: flex;
-flex-wrap: wrap-reverse;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
 
-   
+.estadio-imagen img {
+  width: 50%;
 }
-.estadio-imagen img{
-    width: 50%;
-}
-.estadio-img h2{
-padding: 2rem;
-text-align: center;
 
+.estadio-img h2 {
+  padding: 2rem;
+  text-align: center;
 }
- .liga {
-   display: flex;
-   justify-content: center;
-   padding-bottom: 2rem;
- } .liga-1{
-    text-align: center;
-    border-radius: 10%;
-    padding-bottom: 2rem;
- } .historia{
-    padding: 2rem;
-    margin: 2rem;
- }
+
+.liga {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.liga-1 {
+  text-align: center;
+  border-radius: 10%;
+  padding-bottom: 2rem;
+}
+
+.historia {
+  padding: 2rem;
+  margin: 2rem;
+}
+.historia{
+  background-image: url("./img/amorobieta-4.jpeg");
+    background-attachment: fixed;
+}
