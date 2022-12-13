@@ -169,6 +169,12 @@ input , textarea{
     width: 15rem;
 }
 
+.foot__patrocinadores_div{
+    gap:2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 .foot__legal{
     /* background-color: cornflowerblue;   */
 }
