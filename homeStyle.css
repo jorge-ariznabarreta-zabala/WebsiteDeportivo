@@ -97,9 +97,23 @@ a{
 
 }
 
+.menu_logo{
+ /* text-align: center;
+ justify-content: center; */
+ gap:0;
+}
+
 .logo{
     position: relative;
-    width: 100%;
+    width: 80%;
+}
+
+
+h1{
+    color:white;
+    position: relative;
+    font-size: 30px;
+    padding-top: 12%;
 }
 
 /*-----------------------------Formulario-------------------------------------*/
@@ -146,12 +160,6 @@ input , textarea{
 }
 
 
-h1{
-    color:white;
-    position: relative;
-    font-size: 50px;
-    padding-left: 0%;
-}
 
 .foot__patrocinadores > h2{
     padding-bottom: 0;
