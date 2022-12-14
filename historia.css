@@ -18,11 +18,16 @@ ol {
 .datos {
   padding: 2rem;
   background-image: url("./img/amorobieta-4.jpeg");
-  background-repeat: inherit;
-  font-size: 2rem;
-  text-align: center;
-  font-weight: bold;
-  color: aliceblue;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: sepia(55%);
+font-size: 2rem;
+text-align: center;
+font-weight: bold;
+color: aliceblue;
+background-size: cover;
 }
 
 .amorbi {
@@ -69,7 +74,7 @@ span {
 .estadio-imagen {
   display: grid;
   grid-template-columns: auto auto;
-  padding-left: 5rem;
+  padding-left: 20rem;
   
 
 }
@@ -78,13 +83,14 @@ span {
  width: 50rem;
  height:30rem ;
  padding: 1rem;
- border-radius: 0.5rem;
+ border-radius: 2.5rem;
 
 }
 
 .estadio-img h2 {
   padding: 2rem;
   text-align: center;
+  font-size: 3rem;
 }
 
 .liga {
@@ -105,10 +111,24 @@ span {
 }
 
 .historia {
-  padding: 2rem;
+  padding: 4rem;
 
 }
 .historia{
   background-image: url("./img/amorobieta-4.jpeg");
+  text-align: justify;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: sepia(65%);
+} 
+.historia h2{
+  font-size: 3rem;
+
+}
+.historia h3{
+  font-size: 2rem;
+}
+.historia p{
+  font-size: 1.5rem;
 }
