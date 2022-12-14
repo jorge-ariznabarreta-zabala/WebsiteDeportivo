@@ -154,6 +154,98 @@ input , textarea{
     background-color: #45a049;
   }
 
+  /*-----------------------------EQUIPOS-------------------------------------*/
+
+
+  .fotosCategorias{
+    display: grid;
+    grid-template-columns: auto auto;  
+}
+
+
+
+.body--equipos{
+  background-image: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
+  text-align: center;
+}
+
+
+.futPro{
+    width: 70%;
+    height: 70%;
+}
+
+.femFutPro{
+    width: 65%;
+    height: 65%;
+}
+
+.futJuv{
+    width: 70%;
+    height: 70%;
+}
+
+.futInfantil{
+    width: 70%;
+    height: 70%;
+}
+
+  /*Transiciones Imagenes*/
+
+  .futPro{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: rgb(34, 58, 177);
+  }
+  .futPro:hover{
+    padding: 4rem;
+  }
+
+  .femFutPro{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: rgb(34, 58, 177);;
+  }
+  .femFutPro:hover{
+    padding: 4rem;
+  }
+
+  .futJuv{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: rgb(34, 58, 177);;
+  }
+  .futJuv:hover{
+    padding: 4rem;
+  }
+
+  .futInfantil{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: rgb(34, 58, 177);;
+  }
+  .futInfantil:hover{
+    padding: 4rem;
+  }
+
+  .amorePro, .amoreFem, .amoreJuv, .amoreInf{     
+    border: black 0.3rem solid;
+    margin-left: 25%;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    font-size: 2rem;
+    width: 50%;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .h2--equipos{
+    font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  
+/*----------------------------- FIN EQUIPOS-------------------------------------*/
 
 /*-----------------------------footer-------------------------------------*/
 
