@@ -177,17 +177,17 @@ input , textarea{
 
 .femFutPro{
     width: 65%;
-    height: 65%;
+    height: 65%;    
 }
 
 .futJuv{
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;    
 }
 
 .futInfantil{
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;    
 }
 
   /*Transiciones Imagenes*/
@@ -195,7 +195,7 @@ input , textarea{
   .futPro{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: rgba(247, 8, 8, 0.5);
+    background-color: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
   }
   .futPro:hover{
     padding: 4rem;
@@ -204,7 +204,7 @@ input , textarea{
   .femFutPro{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: rgba(247, 8, 8, 0.5);
+    background-color:linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
   }
   .femFutPro:hover{
     padding: 4rem;
@@ -213,7 +213,7 @@ input , textarea{
   .futJuv{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: rgba(247, 8, 8, 0.5);
+    background-color:linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
   }
   .futJuv:hover{
     padding: 4rem;
@@ -222,7 +222,7 @@ input , textarea{
   .futInfantil{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: rgba(247, 8, 8, 0.5);
+    background-color: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
   }
   .futInfantil:hover{
     padding: 4rem;
@@ -240,12 +240,155 @@ input , textarea{
   }
 
   .h2--equipos{
-    font-size: 5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: rgb(13, 13, 13);  
+    margin-top: 2rem;
+    margin-bottom: 1rem;    
+  }
 
+  .h1--equipos{
+        
+    font-size: 2rem; 
+    color: rgb(69, 7, 226); 
+    margin-top: 2rem;
+    margin-bottom: 2rem;    
   }
   
 /*----------------------------- FIN EQUIPOS-------------------------------------*/
+
+
+/*-----------------------------HISTORIA-------------------------------------*/
+
+
+.datos_historia ul  {
+  list-style: none;
+  padding-left: 0;
+}
+
+.amorobieta_historia {
+  padding: 2rem;
+}
+
+.datos_historia {
+  padding: 2rem;
+  background-image: url("./img/amorobieta-4.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: sepia(55%);
+font-size: 2rem;
+text-align: center;
+font-weight: bold;
+color: aliceblue;
+background-size: cover;
+}
+
+.amorbi_historia {
+  display: flex;
+  justify-content: center;
+}
+
+.amorbi_historia img {
+  width: 15rem;
+}
+
+.trofeos_historia {
+  padding: 3rem;
+  text-align: center;
+}
+
+.trofeos_historia h3 {
+  font-size: 3rem;
+}
+
+.trofeos_historia li {
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+.estadio_historia {
+  padding: 3rem;
+  text-align: center;
+}
+
+.estadio_historia h3 {
+  font-size: 3rem;
+}
+
+.estadio_historia li {
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+.amorobieta-1_historia span {
+  color: rgb(115, 18, 206);
+}
+
+.estadio-imagen_historia {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 20rem;
+  
+
+}
+
+.estadio-imagen_historia a img{
+ width: 50rem;
+ height:30rem ;
+ padding: 1rem;
+ border-radius: 2.5rem;
+
+}
+
+.estadio-img_historia h2 {
+  padding: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.liga_historia {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.liga-1_historia{
+  text-align: center;
+;
+}
+.liga-1_historia img{
+  border-radius: 10%;
+  padding-bottom: 2rem;
+  width:50rem;
+  
+}
+
+.historia {
+  padding: 4rem;
+
+}
+.historia{
+  background-image: url("./img/amorobieta-4.jpeg");
+  text-align: justify;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: sepia(65%);
+} 
+.historia h2{
+  font-size: 3rem;
+
+}
+.historia h3{
+  font-size: 2rem;
+}
+.historia p{
+  font-size: 1.5rem;
+}
+
+/*-----------------------------FIN HISTORIA-------------------------------------*/
+
 
 /*-----------------------------footer-------------------------------------*/
 
