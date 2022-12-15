@@ -47,12 +47,6 @@ html, body {
     /* gap: 1rem; */
 }
 
-.flex_body_item{
-    /* border: solid black; */
-    /* padding-top: 2rem; */
-
-}
-
 .about_img{
 
      width: 100%;
@@ -118,6 +112,18 @@ a{
     padding-left: 30%;
 
 }
+/*-----------------------------Proximos Partidos-------------------------------------*/
+
+.escudoSDA{
+  width: 10%;
+  position: relative;
+
+}
+.partidos_item{
+  border: solid black;
+  position: relative;
+  width: 30%;
+}
 
 /*-----------------------------Formulario-------------------------------------*/
 form{
@@ -157,7 +163,7 @@ input , textarea{
   /*-----------------------------EQUIPOS-------------------------------------*/
 
 
-  .fotosCategorias{
+.fotosCategorias{
     display: grid;
     grid-template-columns: auto auto;  
 }
