@@ -110,6 +110,18 @@ a{
     padding-left: 30%;
 
 }
+/*-----------------------------Proximos Partidos-------------------------------------*/
+
+.escudoSDA{
+  width: 10%;
+  position: relative;
+
+}
+.partidos_item{
+  border: solid black;
+  position: relative;
+  width: 30%;
+}
 
 /*-----------------------------Formulario-------------------------------------*/
 form{
@@ -152,7 +164,7 @@ form{
   /*-----------------------------EQUIPOS-------------------------------------*/
 
 
-  .fotosCategorias{
+.fotosCategorias{
     display: grid;
     grid-template-columns: auto auto;  
 }
