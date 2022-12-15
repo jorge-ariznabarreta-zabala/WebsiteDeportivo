@@ -173,25 +173,21 @@ input , textarea{
 .futPro{
     width: 70%;
     height: 70%;
-    border-radius: 40%;
 }
 
 .femFutPro{
     width: 65%;
-    height: 65%;
-    border-radius: 40%;
+    height: 65%;    
 }
 
 .futJuv{
     width: 60%;
-    height: 60%;
-    border-radius: 40%;
+    height: 60%;    
 }
 
 .futInfantil{
     width: 60%;
-    height: 60%;
-    border-radius: 40%;
+    height: 60%;    
 }
 
   /*Transiciones Imagenes*/
@@ -247,16 +243,15 @@ input , textarea{
     font-size: 2rem;
     color: rgb(13, 13, 13);  
     margin-top: 2rem;
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem;    
   }
 
   .h1--equipos{
-    font-size: 3rem; 
+        
+    font-size: 2rem; 
     color: rgb(69, 7, 226); 
     margin-top: 2rem;
-    margin-bottom: 2rem;
-    
+    margin-bottom: 2rem;    
   }
   
 /*----------------------------- FIN EQUIPOS-------------------------------------*/
