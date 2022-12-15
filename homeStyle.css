@@ -19,12 +19,15 @@ html, body {
 .gridd_home{
     display: grid;
     grid-template-columns: 80% 20%;
+    /* grid-row: 5% 30% auto auto 10%; */
     justify-content: stretch;
 }
 
 
 .gridd_home_item{
+    /* border: 4px solid  black; */
     text-align: center;
+    /* line-height: 150px; */
 }
 
 
@@ -41,9 +44,14 @@ html, body {
 .flex_colum{
     display: flex;
     flex-direction: column;
+    /* gap: 1rem; */
 }
 
+.flex_body_item{
+    /* border: solid black; */
+    /* padding-top: 2rem; */
 
+}
 
 .about_img{
 
@@ -124,7 +132,7 @@ form{
 }
 
 
-.contac_form_text{
+input , textarea{
     border-top: none;
     border-left: none;
     border-right: none;
@@ -145,9 +153,6 @@ form{
   input[type=submit]:hover {
     background-color: #45a049;
   }
-
-    /*----------------------------- FIN HOME-------------------------------------*/
-
 
   /*-----------------------------EQUIPOS-------------------------------------*/
 
@@ -172,17 +177,17 @@ form{
 
 .femFutPro{
     width: 65%;
-    height: 65%;    
+    height: 65%;
 }
 
 .futJuv{
-    width: 60%;
-    height: 60%;    
+    width: 70%;
+    height: 70%;
 }
 
 .futInfantil{
-    width: 60%;
-    height: 60%;    
+    width: 70%;
+    height: 70%;
 }
 
   /*Transiciones Imagenes*/
@@ -190,7 +195,7 @@ form{
   .futPro{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
+    background-color: rgb(34, 58, 177);
   }
   .futPro:hover{
     padding: 4rem;
@@ -199,7 +204,7 @@ form{
   .femFutPro{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color:linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
+    background-color: rgb(34, 58, 177);;
   }
   .femFutPro:hover{
     padding: 4rem;
@@ -208,7 +213,7 @@ form{
   .futJuv{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color:linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
+    background-color: rgb(34, 58, 177);;
   }
   .futJuv:hover{
     padding: 4rem;
@@ -217,7 +222,7 @@ form{
   .futInfantil{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
+    background-color: rgb(34, 58, 177);;
   }
   .futInfantil:hover{
     padding: 4rem;
@@ -235,18 +240,9 @@ form{
   }
 
   .h2--equipos{
-    font-size: 2rem;
-    color: rgb(13, 13, 13);  
-    margin-top: 2rem;
-    margin-bottom: 1rem;    
-  }
+    font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-  .h1--equipos{
-        
-    font-size: 2rem; 
-    color: rgb(69, 7, 226); 
-    margin-top: 2rem;
-    margin-bottom: 2rem;    
   }
   
 /*----------------------------- FIN EQUIPOS-------------------------------------*/
@@ -350,16 +346,16 @@ background-size: cover;
 
 .liga-1_historia{
   text-align: center;
-;padding-bottom: 5rem;
+;
 }
-
+.liga_historia h3{
+  font-size: 2rem;
+}
 .liga-1_historia img{
   border-radius: 10%;
-  padding-bottom: 2rem;
-  width:50rem;
+  padding-bottom: 4rem;
+  width:60rem;
   
-}.liga_historia h3 {
-  font-size: 2rem;
 }
 
 .historia {
