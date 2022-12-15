@@ -195,7 +195,7 @@ input , textarea{
   .futPro{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: rgb(34, 58, 177);
+    background-color: rgba(247, 8, 8, 0.5);
   }
   .futPro:hover{
     padding: 4rem;
@@ -204,7 +204,7 @@ input , textarea{
   .femFutPro{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: rgb(34, 58, 177);;
+    background-color: rgba(247, 8, 8, 0.5);
   }
   .femFutPro:hover{
     padding: 4rem;
@@ -213,7 +213,7 @@ input , textarea{
   .futJuv{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: rgb(34, 58, 177);;
+    background-color: rgba(247, 8, 8, 0.5);
   }
   .futJuv:hover{
     padding: 4rem;
@@ -222,7 +222,7 @@ input , textarea{
   .futInfantil{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: rgb(34, 58, 177);;
+    background-color: rgba(247, 8, 8, 0.5);
   }
   .futInfantil:hover{
     padding: 4rem;
