@@ -7,6 +7,10 @@
     text-align: center;
     
 }
+.actualidad_h2{
+  font-size: 3em;
+  padding: 0.8rem;
+}
 .noticias_h3{
   padding: 2rem;
     text-align: center;
@@ -29,4 +33,23 @@ margin: 0 auto;
    text-align: justify;
    padding: 0.6rem;
    padding-bottom: 2rem;
+}
+.div_slider{
+  position: relative;
+    display: inline-block;
+    text-align: left; 
+    
+}
+.text_slider{
+  position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(56, 56, 123, 0.369);
+    color: aliceblue;
+    font-size: 1.5em;
+}
+.noticias_link{
+  color: aliceblue;
+  font-size: medium;
 }

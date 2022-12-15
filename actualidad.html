@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualidad Deportivas SDA</title>
+
     <link rel="stylesheet" href="actualidad.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="homeStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">  		
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script type="text/javascript" src="slider.js"></script>
+
+    
 </head>
 <header class="gridd_home_item" >
     <!-- <h1>AmoreFoot</h1> -->
@@ -27,27 +36,38 @@
 <body>
     <main>
     <h2 class="actualidad_h2">Actualidad</h2>
-    <div id="hidegreen">
 		<div id="noticias_slider">
-			<div>
+			<div class="div_slider">
                 <img src="./img/actualidad01.jpg" alt="Partido de futbol">
+                <div class="text_slider">
                 <p>El Eibar golea a un Amorebieta de construcccion</p>
+                    <p><a href="noticias1.html" class="noticias_link" id="noticias_click">Leer mas >></a>
+                </p>
+                </div>
             </div>
-			<div>
+			<div class="div_slider">
                 <img src="./img/actualidad02.jpg" alt="Estatua de jugador futbol">
-                <p>Etxeita vuelve a casa: ficha por el Amorebieta</p> 
+                <div class="text_slider">
+                    <p> Etxeita vuelve a casa: ficha por el Amorebieta. </p>
+                    <p><a href="noticias2.html" class="noticias_link">Leer mas >></a></p> 
+                </div>
+                
             </div>
-			<div>
-                <img src="./img/actualidad03.jpg" alt="Balon de futbol">
+			<div class="div_slider">
+                <img src="./img/actualidad03.jpg" alt="aficion de futbol">
+                <div class="text_slider">
                 <p>Unzueta endulza el adiós del Amorebieta a la categoría</p>
+                    <p><a href="noticias3.html" class="noticias_link">Leer mas >></a>
+                </p>
+                </div>
             </div>
-  		
-		</div>
-	</div>
-    <div>
-        <div>
-            
-        </div>
+  		</div>
+    <div id="contenedor">
+        <div><img src="./img/acutalidad04.jpg" alt=""> </div>
+        <div><img src="./img/actualidad07.jpg" alt=""> </div>
+        <div><img src="./img/actualidad06.jpg" alt=""> </div>
+        <div><img src="./img/actualidad05.jpg" alt=""> </div>
+
     </div>
     </main>
     <footer id= "footer" class="gridd_home_item ">
@@ -85,5 +105,6 @@
     
         </div>
     </footer>
+    
 </body>
 </html>
