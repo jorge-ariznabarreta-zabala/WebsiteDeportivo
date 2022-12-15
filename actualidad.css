@@ -5,15 +5,21 @@
 .noticias_h2{
     padding: 2rem;
     text-align: center;
+    
+}
+.noticias_h3{
+  padding: 2rem;
+    text-align: center;
+    font-size: 2em;
 }
 
 .noticias_section{
-width: 40rem;
+max-width: 720px;
 margin: 0 auto;
 
 }
 .noticias_imagen {
-  width: 40rem;
+  max-width: 100%;
   padding-bottom: 0.8rem;
   padding-top: 0.8rem;
   
@@ -22,4 +28,5 @@ margin: 0 auto;
 .noticias_article{
    text-align: justify;
    padding: 0.6rem;
+   padding-bottom: 2rem;
 }
