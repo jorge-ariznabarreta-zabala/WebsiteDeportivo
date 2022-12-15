@@ -3,22 +3,19 @@
     padding: 0;
 }
 .noticias_h2{
-    padding: 1.8rem;
+    padding: 2rem;
     text-align: center;
 }
-
-
 
 .noticias_section{
 width: 40rem;
 margin: 0 auto;
 
-
-
 }
 .noticias_imagen {
   width: 40rem;
   padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
   
 
 }
