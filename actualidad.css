@@ -18,7 +18,7 @@
 }
 
 .noticias_section{
-max-width: 720px;
+width: 55%;
 margin: 0 auto;
 
 }
@@ -35,7 +35,7 @@ margin: 0 auto;
    padding-bottom: 2rem;
 }
 .div_slider{
-  position: relative;
+    position: relative;
     display: inline-block;
     text-align: left; 
     
