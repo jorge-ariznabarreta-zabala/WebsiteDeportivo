@@ -405,6 +405,9 @@ background-size: cover;
     background-size: cover;
 }
 
+.ico :hover{
+  background-color: #199700;
+}
 .patrocinador{
     width: 20rem;
 }
@@ -441,3 +444,8 @@ background-size: cover;
 .foot__legal a{
     color: white;
 }
+
+
+/*-----------------------------RESPONSIVO-------------------------------------*/
+
+
