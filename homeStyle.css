@@ -329,8 +329,8 @@ background-size: cover;
 
 .estadio-imagen_historia {
   display: grid;
-  grid-template-columns: auto auto;
-  padding-left: 20rem;
+  grid-template-columns: auto auto auto;
+  padding-left: 5rem;
   
 
 }
