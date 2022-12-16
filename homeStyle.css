@@ -448,4 +448,56 @@ background-size: cover;
 
 /*-----------------------------RESPONSIVO-------------------------------------*/
 
+/*Gorka Responsive*/ /* EQUIPO  */
 
+
+/*Tablet*/
+
+@media screen and (min-width:481) and (max-width:768px ) { 
+
+}
+
+/*Movil*/
+
+@media screen and (max-width: 480px) {
+ 
+  /* section {
+    width: 25%;
+  } */
+ .futProfesional, .amorePro{
+  width: 70%;
+ }
+
+ li {
+  font-size: 0.5rem;
+ }
+
+ .h1--equipos {
+  font-size: 0.5rem;
+ }
+
+ .h2--equipos {
+  font-size: 0.5rem;
+ }
+
+ .fotosCategorias {
+  width: 75%;
+ }
+
+
+ /* FINAL EQUIPO */
+
+
+
+}
+
+
+
+
+/* 
+
+max-width: 768 x 1024;
+max-width: 375 x 812;
+max-width: 360 x 720;
+max-width: 375 x 667;
+max-width: 360 x 640; */
