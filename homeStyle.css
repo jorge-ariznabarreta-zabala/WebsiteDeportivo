@@ -82,12 +82,12 @@ a{
 }
 
 .menu_logo{
- gap:1rem;
+ gap:0.5rem;
 }
 
 .logo{
     position: relative;
-    width: 100%;
+    width: 120%;
 }
 
 
@@ -111,10 +111,7 @@ a{
   position: relative;
 
 }
-.partidos_item{
-  position: relative;
-  width: 30%;
-}
+
 /*-----------------------------Actualidad-------------------------------------*/
 
 .actualidad{
@@ -124,6 +121,30 @@ a{
   background-position-y: 50% ;
   height: 40rem;
   width: 100%;
+}
+
+.actualidad_item{
+  flex-basis: 30%;
+  position: relative;
+  width: 30%;
+  text-align: left;
+}
+.pic_actualidad{
+  width: 100%;
+}
+
+.fecha_actualidad, .amorebieta_actualidad{
+  color: white;
+  font-size: 1.5rem;
+
+}
+.titular_actualidad{
+  color: white;
+  font-size: 2.3rem;
+}
+.titular_principal_actualidad{
+  color: white;
+  font-size: 3rem;
 }
 /*-----------------------------Formulario-------------------------------------*/
 form{
@@ -405,6 +426,9 @@ background-size: cover;
     background-size: cover;
 }
 
+.ico :hover{
+  background-color: #199700;
+}
 .patrocinador{
     width: 20rem;
 }
@@ -426,6 +450,7 @@ background-size: cover;
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: white;
+    font-size: 3rem;
 }
 
 .foot__redes{
@@ -441,3 +466,57 @@ background-size: cover;
 .foot__legal a{
     color: white;
 }
+
+
+/*-----------------------------RESPONSIVO-------------------------------------*/
+
+/*Gorka Responsive*/ /* EQUIPO  */
+
+/*Tablet*/
+
+@media screen and (min-width:481) and (max-width:768px ) { 
+
+}
+
+/*Movil*/
+
+@media screen and (max-width: 480px) {
+ 
+  /* section {
+    width: 25%;
+  } */
+ .futProfesional, .amorePro{
+  width: 70%;
+ }
+
+ li {
+  font-size: 0.5rem;
+ }
+
+ .h1--equipos {
+  font-size: 0.5rem;
+ }
+
+ .h2--equipos {
+  font-size: 0.5rem;
+ }
+
+ .fotosCategorias {
+  width: 75%;
+ }
+
+
+
+
+/*Nasser Responsive*/ /* HISTORIA  */
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------FIN RESPONSIVO-------------------------------------*/
