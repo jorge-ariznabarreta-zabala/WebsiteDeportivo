@@ -7,5 +7,5 @@ $(document).ready(function(){
     slideWidth: 1500
   });
 
-  $("#noticias_click").trigger("click");
+  
 });
