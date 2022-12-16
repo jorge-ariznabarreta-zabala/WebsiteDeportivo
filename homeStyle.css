@@ -358,8 +358,8 @@ background-size: cover;
 
 .estadio-imagen_historia {
   display: grid;
-  grid-template-columns: auto auto;
-  padding-left: 20rem;
+  grid-template-columns: auto auto auto;
+  padding-left: 5rem;
   
 
 }
@@ -453,7 +453,6 @@ background-size: cover;
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: white;
-    font-size: 3rem;
 }
 
 .foot__redes{
@@ -474,6 +473,36 @@ background-size: cover;
 /*-----------------------------RESPONSIVO-------------------------------------*/
 
 /*Gorka Responsive*/ /* EQUIPO  */
+
+
+/*Tablet*/
+
+@media screen and (min-width:481) and (max-width:768px ) { 
+
+}
+
+/*Movil*/
+
+@media screen and (max-width: 480px) {
+ 
+  /* section {
+    width: 25%;
+  } */}
+ .futProfesional, .amorePro{
+  width: 70%;
+ }
+
+ li {
+  font-size: 0.5rem;
+ }
+
+ .h1--equipos {
+  font-size: 0.5rem;
+ }
+
+ .h2--equipos {
+  font-size: 0.5rem;
+ }
 
 
 
