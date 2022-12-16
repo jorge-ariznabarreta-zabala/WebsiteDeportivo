@@ -130,7 +130,12 @@ a{
   text-align: left;
 }
 .pic_actualidad{
+  position: relative;
   width: 100%;
+}
+.ww{
+  position: relative;
+  width: 90%;
 }
 
 .fecha_actualidad, .amorebieta_actualidad{
@@ -426,9 +431,7 @@ background-size: cover;
     background-size: cover;
 }
 
-.ico :hover{
-  background-color: #199700;
-}
+
 .patrocinador{
     width: 20rem;
 }
