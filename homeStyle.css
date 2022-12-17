@@ -106,10 +106,41 @@ a{
 }
 /*-----------------------------Proximos Partidos-------------------------------------*/
 
-.escudoSDA{
+/* .escudoSDA{
   width: 10%;
   position: relative;
 
+} */
+
+.partidos_item{
+  width: 30%;
+  border : solid black 4px;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.equipo_enfrentado_item{
+border: solid black 4px;
+width: 25%;
+text-align: center;
+}
+
+.escudoIC, .escudoRS{
+  position: relative;
+  object-fit: cover;
+  width: 90%;
+}
+
+.escudoMUR{
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+}
+
+.escudoSDA{
+  position: relative;
+  object-fit: cover;
+  width: 70%;
 }
 
 /*-----------------------------Actualidad-------------------------------------*/
@@ -150,6 +181,12 @@ a{
 .titular_principal_actualidad{
   color: white;
   font-size: 3rem;
+}
+
+
+.imp{
+  width: 2%;
+  position: relative;
 }
 /*-----------------------------Formulario-------------------------------------*/
 form{
@@ -308,11 +345,11 @@ input , textarea{
   background-repeat: no-repeat;
   background-size: cover;
   filter: sepia(55%);
-font-size: 2rem;
-text-align: center;
-font-weight: bold;
-color: aliceblue;
-background-size: cover;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+  background-size: cover;
 }
 
 .amorbi_historia {
