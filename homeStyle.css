@@ -410,9 +410,10 @@ input[type="submit"]:hover {
   padding-left: 5rem;
 }
 
-.estadio-imagen_historia a img {
-  width: 50rem;
-  height: 30rem;
+.estadio-imagen_historia img {
+  transition: 5s ease-in-out;
+  width: 20rem;
+  height: 20rem;
   padding: 1rem;
   border-radius: 2.5rem;
 }
@@ -438,7 +439,7 @@ input[type="submit"]:hover {
 .liga-1_historia img {
   border-radius: 10%;
   padding-bottom: 4rem;
-  width: 60rem;
+  width: 30rem;
 }
 
 .historia {
