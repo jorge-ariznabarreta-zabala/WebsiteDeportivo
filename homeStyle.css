@@ -405,13 +405,15 @@ input[type="submit"]:hover {
 }
 
 .estadio-imagen_historia {
-  display: grid;
-  grid-template-columns: auto auto auto ;
-  padding-left: 5rem;
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+  padding: 5rem;
 }
 
 .estadio-imagen_historia a img {
-  width: 50rem;
+  width: 70rem;
   height: 30rem;
   padding: 1rem;
   border-radius: 2.5rem;
@@ -552,6 +554,11 @@ li {
 
 
 /*Movil*/
+@media screen and (max-width: ) {
+  .estadio-imagen_historia {
+    width: 50%;
+  }
+}
 
 
 /*-----------------------------FIN RESPONSIVO-------------------------------------*/
