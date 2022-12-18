@@ -405,15 +405,13 @@ input[type="submit"]:hover {
 }
 
 .estadio-imagen_historia {
-display: flex;
-flex-direction: column;
-
-justify-content: center;
-  padding: 5rem;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  padding-left: 5rem;
 }
 
 .estadio-imagen_historia a img {
-  width: 70rem;
+  width: 50rem;
   height: 30rem;
   padding: 1rem;
   border-radius: 2.5rem;
