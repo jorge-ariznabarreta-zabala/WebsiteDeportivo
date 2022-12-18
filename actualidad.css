@@ -35,11 +35,11 @@ margin: 0 auto;
    padding: 0.6rem;
    padding-bottom: 2rem;
 }
-p:first-child::first-letter{
+.noticias_article p:first-child::first-letter{
   font-size: 3em;
 }
 .noticias_slider {
-   max-width: 920px;
+   max-width: 1200px;
 	margin: 0 auto;
 }
 .div_slider{
