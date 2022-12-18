@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .noticias_h2{
     padding: 2rem;
@@ -142,5 +143,17 @@ animation-timing-function: linear;
 }
 .contenedor_img:hover{
   transform: rotateY(180deg);
+ 
+}
+.noticias_contenedor_SdAmorebieta{
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  padding-bottom: 1rem;
+font-size: x-small;
+color: rgba(64, 62, 62, 0.603);
+}
+.noticias_contenedor_text{
+  font-weight: 700;
+  padding-bottom: 2rem;
  
 }
