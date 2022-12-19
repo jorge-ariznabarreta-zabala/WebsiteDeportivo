@@ -322,10 +322,6 @@ a {
   /*-----------------------------EQUIPOS-------------------------------------*/
 
 
-.fotosCategorias{
-    display: grid;
-    grid-template-columns: auto auto;  
-}
 
 input[type="submit"]:hover {
   background-color: #45a049;
@@ -335,7 +331,9 @@ input[type="submit"]:hover {
 
 .fotosCategorias {
   display: grid;
+  gap: 2rem;
   grid-template-columns: auto auto;
+  margin: 4rem ;
 }
 
 .body--equipos {
@@ -349,23 +347,24 @@ input[type="submit"]:hover {
 }
 
 .futPro {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
+  
 }
 
 .femFutPro {
-  width: 65%;
-  height: 65%;
+  width: 100%;
+  height: 100%;
 }
 
 .futJuv {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
 }
 
 .futInfantil {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
 }
 
 /*Transiciones Imagenes*/
@@ -426,7 +425,15 @@ input[type="submit"]:hover {
   padding: 4rem;
 }
 
-.amorePro,
+.amorePro{
+  border: black 0.3rem solid;
+  margin-left: 20%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  width: 50%;
+}
+
 .amoreFem,
 .amoreJuv,
 .amoreInf {
@@ -434,14 +441,14 @@ input[type="submit"]:hover {
   margin-left: 25%;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1rem;
   width: 50%;
 
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .h2--equipos {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -449,8 +456,8 @@ input[type="submit"]:hover {
 
 .h1--equipos {
   color: rgb(34, 58, 177);
-  font-size: 3rem;
-  padding: 2rem;
+  font-size: 5rem;
+  padding: 1rem;
 }
 
 /*----------------------------- FIN EQUIPOS-------------------------------------*/
@@ -503,7 +510,7 @@ input[type="submit"]:hover {
 
 .trofeos_historia li {
   padding: 1em;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .estadio_historia {
@@ -527,12 +534,13 @@ input[type="submit"]:hover {
 .estadio-imagen_historia {
   display: grid;
   grid-template-columns: auto auto auto ;
-  padding-left: 5rem;
+  
 }
 
-.estadio-imagen_historia a img {
-  width: 50rem;
-  height: 30rem;
+.estadio-imagen_historia img {
+  transition: 5s ease-in-out;
+  width: 100%;
+  height: 100%;
   padding: 1rem;
   border-radius: 2.5rem;
 }
@@ -558,7 +566,7 @@ input[type="submit"]:hover {
 .liga-1_historia img {
   border-radius: 10%;
   padding-bottom: 4rem;
-  width: 60rem;
+  width:60%;
 }
 
 .historia {
@@ -636,12 +644,21 @@ input[type="submit"]:hover {
 
 /*-----------------------------RESPONSIVE-------------------------------------*/
 
-/*Gorka Responsive*/ /* EQUIPO  */
+
 
 /*Tablet*/
 
-@media screen and (min-width: 481) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  
+  .estadio-imagen_historia {
+    display: grid;
+    grid-template-columns: auto auto ;
+   
+  
+  }
+
 }
+
 
 /*Movil*/
 
@@ -655,21 +672,10 @@ input[type="submit"]:hover {
   width: 70%;
 }
 
-li {
-  font-size: 0.5rem;
-}
 
-.h1--equipos {
-  font-size: 0.5rem;
-}
 
-.h2--equipos {
-  font-size: 0.5rem;
-}
 
-/*Nasser Responsive*/ /* HISTORIA  */
 
-/*Tablet*/
 
 
 /*-----------------------------FIN RESPONSIVO-------------------------------------*/
