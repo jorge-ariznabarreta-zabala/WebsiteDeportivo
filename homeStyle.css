@@ -599,13 +599,13 @@ input[type="submit"]:hover {
   filter: sepia(65%);
 }
 .historia h2 {
-  font-size: 3rem;
-}
-.historia h3 {
   font-size: 2rem;
 }
-.historia p {
+.historia h3 {
   font-size: 1.5rem;
+}
+.historia p {
+  font-size: 1rem;
 }
 
 /*-----------------------------FIN HISTORIA-------------------------------------*/
@@ -684,13 +684,13 @@ input[type="submit"]:hover {
   /* section {
     width: 25%;
   } */
-}
+
 .futProfesional,
 .amorePro {
   width: 70%;
 }
 
-
+}
 
 
 
