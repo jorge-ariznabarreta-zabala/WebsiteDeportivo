@@ -706,6 +706,7 @@ input[type="submit"]:hover {
   }
 
   .contact_form{
+
     padding-left: 5rem;
   }
 
@@ -722,16 +723,13 @@ input[type="submit"]:hover {
     width: 25%;
   } */
 
-
-.futProfesional,
 .amorePro {
   width: 70%;
 }
 
 }
-
-
-
+/*Tablet*/
+/* Edurne Responsive */
 
 
 /*-----------------------------FIN RESPONSIVO-------------------------------------*/
