@@ -685,7 +685,7 @@ input[type="submit"]:hover {
 
 /*Tablet*/
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1024px) {
   
   .estadio-imagen_historia {
     display: grid;
@@ -721,6 +721,7 @@ input[type="submit"]:hover {
   /* section {
     width: 25%;
   } */
+
 
 .futProfesional,
 .amorePro {
