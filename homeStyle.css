@@ -524,7 +524,7 @@ input[type="submit"]:hover {
 
 .estadio-imagen_historia img {
   transition: 5s ease-in-out;
-  width: 20rem;
+  width: 40rem;
   height: 20rem;
   padding: 1rem;
   border-radius: 2.5rem;
