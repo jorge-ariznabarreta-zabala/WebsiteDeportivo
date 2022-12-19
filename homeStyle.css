@@ -45,6 +45,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 /*-----------------------------Header and Menu-------------------------------------*/
 
 #header {
@@ -56,16 +60,33 @@ a {
 }
 
 #menu {
-  justify-content: space-around;
-  padding-top: 3rem;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
   transition: 0.7s;
   background-color: white;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
-.e{
-  align-items: center;
+nav{
+  padding-top: 3rem;
 
+}
+
+nav a {
+  font-size: 1.5rem;
+  color:rgba(9,51,109,255);
+  font-weight: 700;
+  height: 2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+
+}
+
+.logo_etiqueta{
+  align-items: center;
 }
 
 
@@ -75,31 +96,45 @@ a {
 }
 
 .h1--home{
-
-    /* color: rgba(247, 8, 8, 0.5); */
     color:rgba(9,51,109,255);
-    /* background-image: url(./img/header-image.png); */
-
-    background-clip: text;
-    -webkit-background-clip:text ;
-
     position: relative;
     font-size: 90px;
 }
-/*--Proximos Partidos-------------------------------------*/
 
+.h2_home {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.h2_home--blue{
+  color:rgba(9,51,109,255);
+}
+
+.h2_home--small{
+  font-size: 1.7rem;
+
+}
+
+/*--Proximos Partidos-------------------------------------*/
+.partidos{
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
 .partidos_item {
   width: 30%;
   align-items: flex-start;
 }
 .equipo_enfrentado{
   align-items: center;
+  justify-content: left;
   padding-top: 2rem;
 }
 
 .equipo_enfrentado_item{
   width: 25%;
-  text-align: center;
 }
 
 .escudoIC,
@@ -133,7 +168,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%;
-  height: 40rem;
   width: 100%;
 }
 
@@ -175,7 +209,7 @@ a {
 
 .contact_form{
   padding-top: 2rem;
-  padding-left: 10rem;
+  padding-left: 12rem;
   justify-content: center;
 }
 
@@ -220,12 +254,24 @@ a {
   /*--Clasificacion-------------------------------------*/
   
   .clasification_item{
-    height:300px;
+    height:400px;
     width: 45%;
+  }
+
+  .pos-club{
+    gap: 0.5rem;
+  }
+
+  .vs{
+    font-size: 2rem;
+  }
+  .equipo_enfrentado_item{
+    width: 20%;
   }
 
   .clasification_flex{
     align-items: center;
+    gap: 5rem;
   }
   .h2_clasification{
     text-align: left;
@@ -279,29 +325,30 @@ a {
  
   /*--Club-------------------------------------*/
 
-.club{
-    background-image: linear-gradient(to left, rgba(245, 245, 243,0), rgb(4, 4, 77)), url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
-    text-align: center;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+  .club{
+      background-image: linear-gradient(to left, rgba(245, 245, 243,0), rgb(4, 4, 77)),
+       url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
+      text-align: center;
+      background-position-y: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
   .club_panel{
     gap: 0;
   }
 
  
-  .club_videos{
+  .club_item{
     width: 50%;
     text-align: center;
   }
 
-  iframe{
+  .club iframe{
     width: 40%;
     height:200px;
     position: relative;
   }
-  .club_description{
+  .club_item{
     text-align: left;
     width: 45%;
   }
@@ -512,7 +559,7 @@ input[type="submit"]:hover {
 
 .trofeos_historia li {
   padding: 1em;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .estadio_historia {
@@ -536,13 +583,13 @@ input[type="submit"]:hover {
 .estadio-imagen_historia {
   display: grid;
   grid-template-columns: auto auto auto ;
-  padding-left: 5rem;
+  
 }
 
 .estadio-imagen_historia img {
   transition: 5s ease-in-out;
-  width: 40rem;
-  height: 20rem;
+  width: 100%;
+  height: 100%;
   padding: 1rem;
   border-radius: 2.5rem;
 }
@@ -568,7 +615,7 @@ input[type="submit"]:hover {
 .liga-1_historia img {
   border-radius: 10%;
   padding-bottom: 4rem;
-  width: 30rem;
+  width:60%;
 }
 
 .historia {
@@ -583,13 +630,16 @@ input[type="submit"]:hover {
   filter: sepia(65%);
 }
 .historia h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+  text-align: left;
 }
 .historia h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: left;
 }
 .historia p {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  
 }
 
 /*-----------------------------FIN HISTORIA-------------------------------------*/
@@ -624,11 +674,6 @@ input[type="submit"]:hover {
   padding-bottom: 2rem;
 }
 
-.h2--home {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: white;
-}
 
 .foot__redes {
   background-color: rgb(46, 46, 112);
@@ -650,8 +695,36 @@ input[type="submit"]:hover {
 
 /*Tablet*/
 
-@media screen and (min-width: 481) and (max-width: 768px) {
+@media screen and (max-width:1024px) {
+  
+  .estadio-imagen_historia {
+    display: grid;
+    grid-template-columns: auto auto ;
+   
+  
+  }
+/* ----Responsivo Zucelys---- */
+
+  .clasification_item,.actualidad_item, .club_item, .partidos_item, .contact form{
+    width: 90%;
+    padding-top: 0.5rem;
+  }
+
+  .club{
+    background-image: linear-gradient(rgb(4, 4, 77), rgba(245, 245, 243,0)),
+       url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
+  }
+
+  .contact_form{
+
+    padding-left: 5rem;
+  }
+
+/* ----FIN  Responsivo Zucelys---- */
+
+
 }
+
 
 /*Movil*/
 
@@ -663,12 +736,8 @@ input[type="submit"]:hover {
 
 
 
-
-
-
-/*Nasser Responsive*/ /* HISTORIA  */
-
 /*Tablet*/
+/* Edurne Responsive */
 
 
 /*-----------------------------FIN RESPONSIVO-------------------------------------*/
