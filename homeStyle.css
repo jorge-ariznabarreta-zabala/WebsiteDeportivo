@@ -258,6 +258,10 @@ nav a:hover {
     width: 45%;
   }
 
+  .pos-club{
+    gap: 0.5rem;
+  }
+
   .vs{
     font-size: 2rem;
   }
@@ -696,14 +700,14 @@ input[type="submit"]:hover {
     padding-top: 0.5rem;
   }
 
-  .contact form{
-    width: 100%;
+  .club{
+    background-image: linear-gradient(rgb(4, 4, 77), rgba(245, 245, 243,0)),
+       url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
   }
 
   .contact_form{
     padding-left: 5rem;
   }
-
 
 /* ----FIN  Responsivo Zucelys---- */
 
