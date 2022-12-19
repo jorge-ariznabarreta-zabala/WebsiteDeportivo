@@ -1,33 +1,27 @@
-
 @charset "utf-8";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-html, body {
-    width: 100%;
-    min-width: 320px;
-    font-size: 16px;
-    font-family: Arial, Verdana, Tahoma, Trebuchet, sans-serif;
+html,
+body {
+  width: 100%;
+  min-width: 320px;
+  font-size: 16px;
+  font-family: Arial, Verdana, Tahoma, Trebuchet, sans-serif;
 }
 
-
-.gridd_home{
-    display: grid;
-    justify-content: stretch;
+.gridd_home {
+  display: grid;
+  justify-content: stretch;
 }
 
-
-.gridd_home_item{
-    text-align: center;
+.gridd_home_item {
+  text-align: center;
 }
-
-
-
 
 .flex_row{
     display: flex;
@@ -36,125 +30,285 @@ html, body {
     gap: 2rem;
 }
 
-
-.flex_colum{
-    display: flex;
-    flex-direction: column;
+.flex_colum {
+  display: flex;
+  flex-direction: column;
 }
 
-.about_img{
+.flex_body_item{
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+} 
 
-     width: 100%;
-
+a {
+  color: black;
+  text-decoration: none;
 }
-.about__flex_item{
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-
-}
-
-
-a{
-    color: black;
-    text-decoration: none;
-}
-
-
 
 /*-----------------------------Header and Menu-------------------------------------*/
 
-#header{
-    background-image: url(./img/header-image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+#header {
+  background-image: url(./img/header-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    height: 40rem;
+  height: 40rem;
+}
+
+#menu {
+  justify-content: space-around;
+  padding-top: 3rem;
+  transition: 0.7s;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.e{
+  align-items: center;
 
 }
 
-#menu{
-    justify-content: space-around;
-    padding-top: 3rem;
-    transition: 0.7s;
-    background-color: white;
-    opacity:0.9;
-}
-
-.menu_logo{
- gap:0.5rem;
-}
 
 .logo{
     position: relative;
     width: 120%;
 }
 
-
 .h1--home{
 
-    color: rgba(247, 8, 8, 0.5);
-    background-image: url(./img/header-image.png);
+    /* color: rgba(247, 8, 8, 0.5); */
+    color:rgba(9,51,109,255);
+    /* background-image: url(./img/header-image.png); */
 
     background-clip: text;
     -webkit-background-clip:text ;
 
-    position: absolute;
+    position: relative;
     font-size: 90px;
-    padding-left: 30%;
-
 }
-/*-----------------------------Proximos Partidos-------------------------------------*/
+/*--Proximos Partidos-------------------------------------*/
 
-.escudoSDA{
-  width: 10%;
+.partidos_item {
+  width: 30%;
+  align-items: flex-start;
+}
+.equipo_enfrentado{
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.equipo_enfrentado_item{
+  width: 25%;
+  text-align: center;
+}
+
+.escudoIC,
+.escudoRS {
   position: relative;
-
+  object-fit: cover;
+  width: 90%;
 }
 
-/*-----------------------------Actualidad-------------------------------------*/
+.escudoMUR {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+}
 
-.actualidad{
-  background-image: linear-gradient(to right, rgba(243, 242, 247,0), rgba(11, 4, 51, 1)), url("https://sdamorebieta.eus/wp-content/uploads/2022/12/etxano--1200x800.jpg");
+.escudoSDA {
+  position: relative;
+  object-fit: cover;
+  width: 70%;
+}
+
+/*--Actualidad-------------------------------------*/
+
+.actualidad {
+  background-image: linear-gradient(
+      to right,
+      rgba(243, 242, 247, 0),
+      rgba(11, 4, 51, 1)
+    ),
+    url("https://sdamorebieta.eus/wp-content/uploads/2022/12/etxano--1200x800.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 50% ;
+  background-position-y: 50%;
   height: 40rem;
   width: 100%;
 }
-/*-----------------------------Formulario-------------------------------------*/
-form{
-    width: 30%;
-    padding-left: 35%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+
+.actualidad_item{
+  position: relative;
+  width: 30%;
+  text-align: left;
+}
+.pic_actualidad {
+  position: relative;
+  width: 100%;
+}
+.foto_actualidad{
+  position: relative;
+  width: 90%;
+}
+
+.fecha_actualidad,
+.amorebieta_actualidad {
+  color: white;
+  font-size: 1.5rem;
+}
+.titular_actualidad {
+  color: white;
+  font-size: 2.3rem;
+}
+.titular_principal_actualidad {
+  color: white;
+  font-size: 3rem;
 }
 
 
-input , textarea{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-width: 0.1rem;
-    border-color: rgb(128, 128, 128);
-    resize:none;
+
+/*--Contactenos-------------------------------------*/
+.contact{
+  justify-content: center;
+
 }
 
- input[type=submit] {
-    width: 4rem;
-    background-color: rgb(59, 139, 139);
-    color: white;
-    padding-top:0.7rem;
-    padding-bottom:0.7rem;
-    border-radius: 0.7rem;
+.contact_form{
+  padding-top: 2rem;
+  padding-left: 10rem;
+  justify-content: center;
+}
+
+.contact form{
+
+  width: 50%;
+  text-align: left;
+  margin:0px auto;
+
+}
+.contact  button[type=submit] {
+  width: 25%;
+  height: 3rem;
+  position: relative;
+  background-color:rgb(46, 46, 112);
+  color: white;
+  padding-top:0.7rem;
+  padding-bottom:0.7rem;
+  border: none;
+}
+
+.contact  input[type=text] {
+  width: 40%;
+  height: 3rem;
+  position: relative;
+  color: black;
+}
+
+.contact_label{
+  width: 80%;
+  position: relative;
+  padding-top:0.7rem;
+  padding-bottom:0.7rem;
+}
+
+
+.contact button[type=submit]:hover {
+  background-image: linear-gradient( rgba(243, 242, 247,0), rgba(11, 4, 51, 1));
+  
+} 
+
+  /*--Clasificacion-------------------------------------*/
+  
+  .clasification_item{
+    height:300px;
+    width: 45%;
   }
 
-  input[type=submit]:hover {
-    background-color: #45a049;
+  .clasification_flex{
+    align-items: center;
+  }
+  .h2_clasification{
+    text-align: left;
+  }
+  
+  thead {
+    position: sticky;
+    top: 0;
+    background-color: rgb(247, 246, 253);
+    border: none;
+  }
+
+  tr, th, td{
+    border: none;
+
+  } 
+
+  tbody th{
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  tr{
+    width: auto;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+
+  .pos-club{
+    align-items: center;
+    justify-content: left;
+
+  }
+
+  .clasification_table{
+    overflow:scroll;
+  }
+
+  .imp{
+    width: 15%;
+    position: relative;
+  }
+
+  .ultimo_resultado{
+    width: 80%;
+    justify-content: flex-start;
+    text-align: left;
+  }
+ 
+  /*--Club-------------------------------------*/
+
+.club{
+    background-image: linear-gradient(to left, rgba(245, 245, 243,0), rgb(4, 4, 77)), url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
+    text-align: center;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .club_panel{
+    gap: 0;
+  }
+
+ 
+  .club_videos{
+    width: 50%;
+    text-align: center;
+  }
+
+  iframe{
+    width: 40%;
+    height:200px;
+    position: relative;
+  }
+  .club_description{
+    text-align: left;
+    width: 45%;
+  }
+
+  .historia_home{
+    color: white ;
+    font-size:x-large;
   }
 
   /*-----------------------------EQUIPOS-------------------------------------*/
@@ -165,104 +319,137 @@ input , textarea{
     grid-template-columns: auto auto;  
 }
 
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
 
+/*-----------------------------EQUIPOS-------------------------------------*/
 
-.body--equipos{
-  background-image: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
+.fotosCategorias {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.body--equipos {
+  background-image: linear-gradient(
+    180deg,
+    #bee2ff 0,
+    #5096cc 50%,
+    #005197 100%
+  );
   text-align: center;
 }
 
-
-.futPro{
-    width: 70%;
-    height: 70%;
+.futPro {
+  width: 70%;
+  height: 70%;
 }
 
-.femFutPro{
-    width: 65%;
-    height: 65%;
+.femFutPro {
+  width: 65%;
+  height: 65%;
 }
 
-.futJuv{
-    width: 70%;
-    height: 70%;
+.futJuv {
+  width: 70%;
+  height: 70%;
 }
 
-.futInfantil{
-    width: 70%;
-    height: 70%;
+.futInfantil {
+  width: 70%;
+  height: 70%;
 }
 
-  /*Transiciones Imagenes*/
+/*Transiciones Imagenes*/
 
-  .futPro{
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-    background-color: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
-  }
-  .futPro:hover{
-    padding: 4rem;
-  }
+.futPro {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: linear-gradient(
+    180deg,
+    #bee2ff 0,
+    #5096cc 50%,
+    #005197 100%
+  );
+}
+.futPro:hover {
+  padding: 4rem;
+}
 
-  .femFutPro{
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-    background-color: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
-  }
-  .femFutPro:hover{
-    padding: 4rem;
-  }
+.femFutPro {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: linear-gradient(
+    180deg,
+    #bee2ff 0,
+    #5096cc 50%,
+    #005197 100%
+  );
+}
+.femFutPro:hover {
+  padding: 4rem;
+}
 
-  .futJuv{
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-    background-color: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
-  }
-  .futJuv:hover{
-    padding: 4rem;
-  }
+.futJuv {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: linear-gradient(
+    180deg,
+    #bee2ff 0,
+    #5096cc 50%,
+    #005197 100%
+  );
+}
+.futJuv:hover {
+  padding: 4rem;
+}
 
-  .futInfantil{
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-    background-color: linear-gradient(180deg, #bee2ff 0, #5096cc 50%, #005197 100%);
-  }
-  .futInfantil:hover{
-    padding: 4rem;
-  }
+.futInfantil {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: linear-gradient(
+    180deg,
+    #bee2ff 0,
+    #5096cc 50%,
+    #005197 100%
+  );
+}
+.futInfantil:hover {
+  padding: 4rem;
+}
 
-  .amorePro, .amoreFem, .amoreJuv, .amoreInf{     
-    border: black 0.3rem solid;
-    margin-left: 25%;
-    margin-top: 1rem;
-    margin-bottom:1rem;
-    font-size: 2rem;
-    width: 50%;
+.amorePro,
+.amoreFem,
+.amoreJuv,
+.amoreInf {
+  border: black 0.3rem solid;
+  margin-left: 25%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  width: 50%;
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
-  .h2--equipos{
-    font-size: 2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.h2--equipos {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
-  }
+.h1--equipos {
+  color: rgb(34, 58, 177);
+  font-size: 3rem;
+  padding: 2rem;
+}
 
-  .h1--equipos{
-    color:  rgb(34, 58, 177);;
-    font-size: 3rem;
-    padding: 2rem;
-  }
-  
 /*----------------------------- FIN EQUIPOS-------------------------------------*/
-
 
 /*-----------------------------HISTORIA-------------------------------------*/
 
-
-.datos_historia ul  {
+.datos_historia ul {
   list-style: none;
   padding-left: 0;
 }
@@ -279,13 +466,15 @@ input , textarea{
   background-repeat: no-repeat;
   background-size: cover;
   filter: sepia(55%);
-font-size: 2rem;
-text-align: center;
-font-weight: bold;
-color: aliceblue;
-background-size: cover;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+  background-size: cover;
 }
-
+.datos_historia ul li{
+  font-size: 1.5rem;
+}
 .amorbi_historia {
   display: flex;
   justify-content: center;
@@ -329,18 +518,16 @@ background-size: cover;
 
 .estadio-imagen_historia {
   display: grid;
-  grid-template-columns: auto auto;
-  padding-left: 20rem;
-  
-
+  grid-template-columns: auto auto auto ;
+  padding-left: 5rem;
 }
 
-.estadio-imagen_historia a img{
- width: 50rem;
- height:30rem ;
- padding: 1rem;
- border-radius: 2.5rem;
-
+.estadio-imagen_historia img {
+  transition: 5s ease-in-out;
+  width: 40rem;
+  height: 20rem;
+  padding: 1rem;
+  border-radius: 2.5rem;
 }
 
 .estadio-img_historia h2 {
@@ -355,94 +542,127 @@ background-size: cover;
   padding-bottom: 2rem;
 }
 
-.liga-1_historia{
+.liga-1_historia {
   text-align: center;
-;
 }
-.liga_historia h3{
+.liga_historia h3 {
   font-size: 2rem;
 }
-.liga-1_historia img{
+.liga-1_historia img {
   border-radius: 10%;
   padding-bottom: 4rem;
-  width:60rem;
+  width: 30rem;
 }
 
 .historia {
   padding: 4rem;
-
 }
-.historia{
+.historia {
   background-image: url("./img/amorobieta-4.jpeg");
   text-align: justify;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: sepia(65%);
-} 
-.historia h2{
-  font-size: 3rem;
-
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: sepia(65%);
 }
-.historia h3{
+.historia h2 {
+  font-size: 3rem;
+}
+.historia h3 {
   font-size: 2rem;
 }
-.historia p{
+.historia p {
   font-size: 1.5rem;
 }
 
 /*-----------------------------FIN HISTORIA-------------------------------------*/
 
-
 /*-----------------------------footer-------------------------------------*/
 
-#footer{
-    background-image: linear-gradient(to right, rgba(48, 7, 231,0.8), rgba(230, 40, 40, 0.9)), url("https://sdamorebieta.eus/wp-content/uploads/2022/09/equipo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+#footer {
+  background-image: linear-gradient(
+      to right,
+      rgba(48, 7, 231, 0.8),
+      rgba(230, 40, 40, 0.9)
+    ),
+    url("https://sdamorebieta.eus/wp-content/uploads/2022/09/equipo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.ico :hover{
-  background-color: #199700;
-}
-.patrocinador{
-    width: 20rem;
+.patrocinador {
+  width: 20rem;
 }
 
-.foot__patrocinadores_div{
-    gap:2rem;
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+.foot__patrocinadores_div {
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
-.foot__legal{
-    background-color: rgb(46, 46, 112);
-    color: white;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.foot__legal {
+  background-color: rgb(46, 46, 112);
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.h2--home{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    color: white;
+.h2--home {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
 }
 
-.foot__redes{
-    background-color: rgb(46, 46, 112);
-    padding-bottom: 1rem;
-
+.foot__redes {
+  background-color: rgb(46, 46, 112);
+  padding-bottom: 1rem;
 }
 
-#copyRight{
-    padding-bottom: 1rem;
+#copyRight {
+  padding-bottom: 1rem;
 }
 
-.foot__legal a{
-    color: white;
+.foot__legal a {
+  color: white;
 }
 
 
-/*-----------------------------RESPONSIVO-------------------------------------*/
+/*-----------------------------RESPONSIVE-------------------------------------*/
+
+/*Gorka Responsive*/ /* EQUIPO  */
+
+/*Tablet*/
+
+@media screen and (min-width: 481) and (max-width: 768px) {
+}
+
+/*Movil*/
+
+@media screen and (max-width: 480px) {
+  /* section {
+    width: 25%;
+  } */
+}
+.futProfesional,
+.amorePro {
+  width: 70%;
+}
+
+li {
+  font-size: 0.5rem;
+}
+
+.h1--equipos {
+  font-size: 0.5rem;
+}
+
+.h2--equipos {
+  font-size: 0.5rem;
+}
+
+/*Nasser Responsive*/ /* HISTORIA  */
+
+/*Tablet*/
 
 
+/*-----------------------------FIN RESPONSIVO-------------------------------------*/

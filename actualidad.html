@@ -9,13 +9,7 @@
     <link rel="stylesheet" href="actualidad.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="homeStyle.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">  		
-	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     
-    <script type="text/javascript" src="slider.js"></script>
-
     
 </head>
 <header class="gridd_home_item" >
@@ -35,39 +29,98 @@
 </header>
 <body>
     <main>
-    <h2 class="actualidad_h2">Actualidad</h2>
-		<div id="noticias_slider">
-			<div class="div_slider">
+    <h2 class="actualidad_h2" id="actualidad">Actualidad</h2>
+    <div class="noticias_slider">
+        <div class="div_slider" id="slider">
+          <ul class="slides_ul">
+            <li class="slide_li" id="slide1">
                 <img src="./img/actualidad01.jpg" alt="Partido de futbol">
                 <div class="text_slider">
-                <p>El Eibar golea a un Amorebieta de construcccion</p>
-                    <p><a href="noticias1.html" class="noticias_link" id="noticias_click">Leer mas >></a>
-                </p>
+                <p>El Eibar golea a un Amorebieta de construcción</p><br>
+                <a href="noticias1.html"  target="_blank" class="noticias_link" >Leer mas >></a>
+                
                 </div>
-            </div>
-			<div class="div_slider">
+              
+            </li>
+            <li class="slide_li" id="slide2">
                 <img src="./img/actualidad02.jpg" alt="Estatua de jugador futbol">
                 <div class="text_slider">
                     <p> Etxeita vuelve a casa: ficha por el Amorebieta. </p>
-                    <p><a href="noticias2.html" class="noticias_link">Leer mas >></a></p> 
+                    <p><a href="noticias2.html" target="_blank" class="noticias_link">Leer mas >></a></p> 
                 </div>
-                
-            </div>
-			<div class="div_slider">
-                <img src="./img/actualidad03.jpg" alt="aficion de futbol">
+            </li>
+            <li class="slide_li" id="slide3">
+                <img src="./img/actualidad03.jpg" alt="Grada del futbol">
                 <div class="text_slider">
-                <p>Unzueta endulza el adiós del Amorebieta a la categoría</p>
-                    <p><a href="noticias3.html" class="noticias_link">Leer mas >></a>
-                </p>
+                    <p> Unzueta endulza el adiós del Amorebieta a la categoría </p>
+                    <p><a href="noticias3.html" target="_blank" class="noticias_link">Leer mas >></a></p> 
                 </div>
+            </li>
+            
+            <li class="slide_li">
+                <img src="./img/actualidad01.jpg" alt="Partido de futbol">
+                <div class="text_slider">
+                <p>El Eibar golea a un Amorebieta de construcción</p><br>
+                <a href="noticias1.html"  target="_blank" class="noticias_link" >Leer mas >></a>
+                
+                </div>
+            </li>
+          </ul>
+          <ul class="slider-controler">
+            <li><a href="#slide1">&bullet;</a></li>
+            <li><a href="#slide2">&bullet;</a></li>
+            <li><a href="#slide3">&bullet;</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    <div class="noticias_contenedor">
+        <article>
+             <div>
+            <h2>Adiós Amorebieta, adiós a un sueño de 364 días</h2>
+            <img class="contenedor_img" src="./img/acutalidad04.jpg" alt="Grada">
             </div>
-  		</div>
-    <div id="contenedor">
-        <div><img src="./img/acutalidad04.jpg" alt=""> </div>
-        <div><img src="./img/actualidad07.jpg" alt=""> </div>
-        <div><img src="./img/actualidad06.jpg" alt=""> </div>
-        <div><img src="./img/actualidad05.jpg" alt=""> </div>
-
+            <div>
+                <p class="noticias_contenedor_SdAmorebieta" >Sd Amorebieta</p>
+            <p class="noticias_contenedor_text">364 días después terminó el sueño de plata del Amorebieta.</p>
+            <a  href="noticias4.html">Segir leyendo &#8594;</a>
+       
+            </div>
+    </article>
+    <article>
+        <h2>A la espera de un milagro para ganar al Malaga</h2>
+        
+        <div><img class="contenedor_img" src="./img/actualidad07.jpg" alt="fulbol"> </div>
+        <div>
+            <p class="noticias_contenedor_SdAmorebieta" >Sd Amorebieta</p>
+            <p class="noticias_contenedor_text">
+                El Amorebieta se las prometía muy felices el pasado sábado tras</p>
+            <a href="noticias5.html">Segir leyendo &#8594;</a>
+       
+            </div>
+    </article>
+    <article>
+    <h2>Un gol de Guruzeta fue suficiente para doblegar al Huesca </h2>
+        <div><img class="contenedor_img" src="./img/actualidad06.jpg" alt="Balon llameante"> </div>
+        <div>
+            <p class="noticias_contenedor_SdAmorebieta" >Sd Amorebieta</p>
+            <p class="noticias_contenedor_text">
+                Otra victoria más y ya van cuatro seguidas como local para el Amorebieta</p>
+            <a href="noticias6.html">Segir leyendo &#8594;</a>
+       
+            </div>
+    </article>
+    <article>
+        <h2>El sueño del Amorebieta esta a punto de acabarse</h2>
+        <div><img class="contenedor_img" src="./img/actualidad05.jpg" alt=""> </div>
+        <div>
+            <p class="noticias_contenedor_SdAmorebieta" >Sd Amorebieta</p>
+            <p class="noticias_contenedor_text">
+                Las cuentas están claras. Cinco puntos de diferencia, tres partidos por disputar</p>
+            <a href="noticias7.html">Segir leyendo &#8594;</a>
+       
+            </div>
+    </article>
     </div>
     </main>
     <footer id= "footer" class="gridd_home_item ">
