@@ -56,16 +56,34 @@ a {
 }
 
 #menu {
-  justify-content: space-around;
-  padding-top: 3rem;
+  justify-content: space-between;
+
+  padding-left: 5rem;
+  padding-right: 5rem;
   transition: 0.7s;
   background-color: white;
   opacity: 0.9;
 }
 
+nav{
+  padding-top: 3rem;
+
+}
+
+nav a {
+  font-size: 1.5rem;
+  color:rgba(9,51,109,255);
+  font-weight: 700;
+  height: 2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+
+}
+
 .logo_etiqueta{
   align-items: center;
-
 }
 
 
