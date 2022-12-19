@@ -634,6 +634,7 @@ input[type="submit"]:hover {
 /*Tablet*/
 
 @media screen and (min-width: 481) and (max-width: 768px) {
+
 }
 
 /*Movil*/
@@ -642,6 +643,7 @@ input[type="submit"]:hover {
   /* section {
     width: 25%;
   } */
+  
 }
 .futProfesional,
 .amorePro {
@@ -663,6 +665,6 @@ li {
 /*Nasser Responsive*/ /* HISTORIA  */
 
 /*Tablet*/
-
+/* Edurne Responsive */
 
 /*-----------------------------FIN RESPONSIVO-------------------------------------*/
