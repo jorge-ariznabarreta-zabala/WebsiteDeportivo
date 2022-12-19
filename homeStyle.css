@@ -495,7 +495,7 @@ input[type="submit"]:hover {
 
 .trofeos_historia li {
   padding: 1em;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .estadio_historia {
@@ -519,13 +519,13 @@ input[type="submit"]:hover {
 .estadio-imagen_historia {
   display: grid;
   grid-template-columns: auto auto auto ;
-  padding-left: 5rem;
+  
 }
 
 .estadio-imagen_historia img {
   transition: 5s ease-in-out;
-  width: 40rem;
-  height: 20rem;
+  width: 100%;
+  height: 100%;
   padding: 1rem;
   border-radius: 2.5rem;
 }
@@ -551,7 +551,7 @@ input[type="submit"]:hover {
 .liga-1_historia img {
   border-radius: 10%;
   padding-bottom: 4rem;
-  width: 30rem;
+  width:60%;
 }
 
 .historia {
@@ -633,8 +633,17 @@ input[type="submit"]:hover {
 
 /*Tablet*/
 
-@media screen and (min-width: 481) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  
+  .estadio-imagen_historia {
+    display: grid;
+    grid-template-columns: auto auto ;
+   
+  
+  }
+
 }
+
 
 /*Movil*/
 
@@ -660,9 +669,6 @@ li {
   font-size: 0.5rem;
 }
 
-/*Nasser Responsive*/ /* HISTORIA  */
-
-/*Tablet*/
 
 
 /*-----------------------------FIN RESPONSIVO-------------------------------------*/
