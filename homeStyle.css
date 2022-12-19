@@ -45,6 +45,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 /*-----------------------------Header and Menu-------------------------------------*/
 
 #header {
@@ -57,12 +61,11 @@ a {
 
 #menu {
   justify-content: space-between;
-
   padding-left: 5rem;
   padding-right: 5rem;
   transition: 0.7s;
   background-color: white;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 nav{
@@ -93,19 +96,33 @@ nav a:hover {
 }
 
 .h1--home{
-
-    /* color: rgba(247, 8, 8, 0.5); */
     color:rgba(9,51,109,255);
-    /* background-image: url(./img/header-image.png); */
-
-    background-clip: text;
-    -webkit-background-clip:text ;
-
     position: relative;
     font-size: 90px;
 }
-/*--Proximos Partidos-------------------------------------*/
 
+.h2_home {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.h2_home--blue{
+  color:rgba(9,51,109,255);
+}
+
+.h2_home--small{
+  font-size: 1.7rem;
+
+}
+
+/*--Proximos Partidos-------------------------------------*/
+.partidos{
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
 .partidos_item {
   width: 30%;
   align-items: flex-start;
@@ -151,7 +168,6 @@ nav a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%;
-  height: 40rem;
   width: 100%;
 }
 
@@ -193,7 +209,7 @@ nav a:hover {
 
 .contact_form{
   padding-top: 2rem;
-  padding-left: 15rem;
+  padding-left: 12rem;
   justify-content: center;
 }
 
@@ -238,7 +254,7 @@ nav a:hover {
   /*--Clasificacion-------------------------------------*/
   
   .clasification_item{
-    height:300px;
+    height:400px;
     width: 45%;
   }
 
@@ -305,29 +321,30 @@ nav a:hover {
  
   /*--Club-------------------------------------*/
 
-.club{
-    background-image: linear-gradient(to left, rgba(245, 245, 243,0), rgb(4, 4, 77)), url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
-    text-align: center;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+  .club{
+      background-image: linear-gradient(to left, rgba(245, 245, 243,0), rgb(4, 4, 77)),
+       url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
+      text-align: center;
+      background-position-y: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
   .club_panel{
     gap: 0;
   }
 
  
-  .club_videos{
+  .club_item{
     width: 50%;
     text-align: center;
   }
 
-  iframe{
+  .club iframe{
     width: 40%;
     height:200px;
     position: relative;
   }
-  .club_description{
+  .club_item{
     text-align: left;
     width: 45%;
   }
@@ -640,11 +657,6 @@ input[type="submit"]:hover {
   padding-bottom: 2rem;
 }
 
-.h2--home {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: white;
-}
 
 .foot__redes {
   background-color: rgb(46, 46, 112);
@@ -666,7 +678,7 @@ input[type="submit"]:hover {
 
 /*Tablet*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:900px) {
   
   .estadio-imagen_historia {
     display: grid;
@@ -674,6 +686,24 @@ input[type="submit"]:hover {
    
   
   }
+/* ----Responsivo Zucelys---- */
+
+  .clasification_item,.actualidad_item, .club_item, .partidos_item, .contact form{
+    width: 90%;
+    padding-top: 0.5rem;
+  }
+
+  .contact form{
+    width: 100%;
+  }
+
+  .contact_form{
+    padding-left: 5rem;
+  }
+
+
+/* ----FIN  Responsivo Zucelys---- */
+
 
 }
 
