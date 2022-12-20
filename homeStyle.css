@@ -9,7 +9,7 @@
 html,
 body {
   width: 100%;
-  min-width: 320px;
+  /* min-width: 320px; */
   font-size: 16px;
   font-family: Arial, Verdana, Tahoma, Trebuchet, sans-serif;
 }
@@ -416,6 +416,7 @@ input[type="submit"]:hover {
   color: rgb(34, 58, 177);
   font-size: 4rem;
   padding: 1rem;
+  position: relative;
 }
 
 /*Transicion*/
@@ -812,6 +813,10 @@ padding-bottom: 2rem;
     height: 250px;
   }
 
+  /* .h1_equipos{
+    font-size: 60px;
+  } */
+
   /* ----Responsivo Zucelys---- */
   .club_item, .contact form{
     width: 90%;
@@ -845,10 +850,15 @@ padding-bottom: 2rem;
 
 /* ----Responsivo GORKA---- */
 
-.imagen{
-  height: 400px;
-}
-
+  .imagen{
+    height: 400px;
+  }
+  .item_flex{
+    width: 100%;
+  }
+  .h1_e{
+    font-size: 14px;
+  }
 
  /* ----FIN Responsivo GORKA---- */
 
@@ -859,13 +869,7 @@ padding-bottom: 2rem;
 
 
   }
-
-  .item_flex{
-
-    width: 100%;
-  }
-
-
+  
 
 /* ----Responsivo Zucelys---- */
 
@@ -893,7 +897,7 @@ padding-bottom: 2rem;
 @media screen and (max-width: 640px) {
 
 
-
+  
   /* ----Responsivo Zucelys---- */
   .h1--home{
     font-size: 60px;
@@ -912,13 +916,9 @@ padding-bottom: 2rem;
   /* ----FIN  Responsivo Zucelys---- */
 
 
-  /* .imagen{
-    height: 250px;
-  } */
+  
 
-  .h1--equipos{
-    font-size: 60px;
-  }
+
 }
 
 @media screen and (max-width: 480px) {
