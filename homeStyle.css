@@ -268,10 +268,13 @@ nav a:hover {
   .equipo_enfrentado_item{
     width: 20%;
   }
+  .equipo_enfrentado{
+    gap:1rem
+  }
 
   .clasification_flex{
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
   }
   .h2_clasification{
     text-align: left;
@@ -380,7 +383,6 @@ input[type="submit"]:hover {
   margin-bottom: 1rem;
   font-size: 1rem;
   width: 50%;
-
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -437,7 +439,7 @@ input[type="submit"]:hover {
   height: 100%;
 }
 .imagen{
-  height: 400px;
+  height: 350px;/*--------------------------------*/
 }
 .futJuv {
   width: 100%;
@@ -659,12 +661,17 @@ input[type="submit"]:hover {
 
 .patrocinador {
   width: 20rem;
+  position: relative;
 }
 
 .foot__patrocinadores_div {
   gap: 2rem;
   padding-top: 3rem;
   padding-bottom: 5rem;
+}
+
+.foot_redes_ico{
+  gap:0.5rem
 }
 
 .foot__legal {
@@ -678,6 +685,7 @@ input[type="submit"]:hover {
 .foot__redes {
   background-color: rgb(46, 46, 112);
   padding-bottom: 1rem;
+  justify-content: center;
 }
 
 #copyRight {
@@ -847,13 +855,53 @@ padding-bottom: 2rem;
 /*---------------------------FIN ACTUALIDAD -------------------------------*/
 
 
+
+
 /*-----------------------------RESPONSIVE-------------------------------------*/
 
+@media screen and (max-width:1283px) {
+
+  /* ----Responsivo Zucelys---- */
+  .club_item, .contact form{
+    width: 90%;
+    padding-top: 0.5rem;
+  }
+
+  .clasification_item{
+    width: 45%;
+
+  }
+
+  .club{
+    background-image: linear-gradient(rgb(4, 4, 77), rgba(245, 245, 243,0)),
+       url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
+  }
+
+  .patrocinador {
+    width: 15rem;
+  }
+
+  .historia_home{
+    font-size:large;
+  }
+  /* ----FIN  Responsivo Zucelys---- */
 
 
-/*Tablet*/
+ }
 
-@media screen and (max-width:1024px) {
+
+ /* Table */
+
+@media screen and (max-width:900px) {
+
+/* ----Responsivo GORKA---- */
+
+  .imagen{
+    height: 200px;
+ }
+
+ /* ----FIN Responsivo GORKA---- */
+
   
   .estadio-imagen_historia {
     display: grid;
@@ -861,6 +909,9 @@ padding-bottom: 2rem;
    
   
   }
+
+
+
 /* ----Responsivo Zucelys---- */
 
   .clasification_item,.actualidad_item, .club_item, .partidos_item, .contact form{
@@ -874,10 +925,8 @@ padding-bottom: 2rem;
   }
 
   .contact_form{
-
     padding-left: 5rem;
   }
-
 /* ----FIN  Responsivo Zucelys---- */
 
 
@@ -886,25 +935,74 @@ padding-bottom: 2rem;
 
 /*Movil*/
 
-@media screen and (max-width: 480px) {
-  /* section {
-    width: 25%;
-  } */
-  /* Edurne Responsive */
-  .noticias_contenedor{
-    display: block;
+@media screen and (max-width: 640px) {
+
+
+
+  /* ----Responsivo Zucelys---- */
+  .h1--home{
+    font-size: 60px;
   }
-    
+
+  .h2_home {
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  .foot__redes h2, .contact h2{
+    font-size: 1.2rem;
+
+  }
+
+  /* ----FIN  Responsivo Zucelys---- */
+
+
+
+
+
+  .amorePro {
+    width: 70%;
+  }
 }
 
 
-  /* ----FIN  Responsivo Edurne---- */
 
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+  .h2_home, .foot__redes h2, .contact h2{
+    color: #f1032b;
+
+    font-size: 100%;  
+  }
+
+  .politicas{
+    width: 70%;
+    padding-left: 9rem;
+  }
+
+
+  
+  .historia_home{
+    font-size:medium;
+  }
+
+/* Edurne Responsive */
+.noticias_contenedor{
+  display: block;
 }
 
 
 
-/*Tablet*/
+  }
+
 
 
 
