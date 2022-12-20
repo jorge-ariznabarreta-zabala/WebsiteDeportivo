@@ -381,7 +381,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  margin: 4rem ;
+  margin: 2rem ;
   justify-content: center;
 }
 
@@ -856,7 +856,7 @@ padding-bottom: 2rem;
     width: 100%;
   }
   .h1_e{
-    font-size: 14px;
+    font-size: 3rem;
   }
 
  /* ----FIN Responsivo GORKA---- */
@@ -915,12 +915,17 @@ padding-bottom: 2rem;
   /* ----FIN  Responsivo Zucelys---- */
 
 
-  
-
-
 }
 
 @media screen and (max-width: 480px) {
+
+
+  /* Responsive Gorka */
+  .h1_e{
+    font-size: 1.7rem;
+  }
+  /* FIN Responsive Gorka */
+
 
   .body_home{
     font-size: 14px;
