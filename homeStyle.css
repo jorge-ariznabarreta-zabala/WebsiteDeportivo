@@ -371,16 +371,17 @@ nav a:hover {
 
 
 
-input[type="submit"]:hover {
+/* input[type="submit"]:hover {
   background-color: #45a049;
-}
+} */
 
 /*-----------------------------EQUIPOS-------------------------------------*/
 
 .fotosCategorias {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
   margin: 4rem ;
   justify-content: center;
 }
@@ -837,7 +838,7 @@ padding-bottom: 2rem;
 
 /* ----Responsivo GORKA---- */
 
-  /*.imagen{
+.imagen{
     height: 200px;
  }
 
