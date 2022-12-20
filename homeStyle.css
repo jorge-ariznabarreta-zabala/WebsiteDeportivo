@@ -645,7 +645,8 @@ input[type="submit"]:hover {
 .actualidad_h2{
 font-size: 3em;
 padding: 0.8rem;
-margin-left: 8rem;
+color:rgba(9,51,109,255);
+
 }
 .noticias_h3{
 padding: 2rem;
@@ -900,6 +901,16 @@ padding-bottom: 2rem;
   .amorePro {
     width: 70%;
   }
+  /* responsive acualidad*/
+.actualidad_h2{
+  font-size: 1.5rem;
+}
+.noticias_contenedor{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 0;
+}
 }
 
 
@@ -955,7 +966,13 @@ padding-bottom: 2rem;
   }
 /* Edurne Responsive */
 .noticias_contenedor{
-  display: block;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+   margin: 0;
+   padding: 0;
+   justify-content: center;
+  
 }
 
   .equipo_enfrentado_span{
