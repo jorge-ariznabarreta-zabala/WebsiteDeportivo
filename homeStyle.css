@@ -96,7 +96,7 @@ nav a:hover {
     width: 120%;
 }
 
-.h1--home{
+.h1_home{
     color:rgba(9,51,109,255);
     position: relative;
     font-size: 90px;
@@ -367,13 +367,6 @@ nav a:hover {
     font-size:x-large;
   }
 
-  /*-----------------------------EQUIPOS-------------------------------------*/
-
-
-
-/* input[type="submit"]:hover {
-  background-color: #45a049;
-} */
 
 /*-----------------------------EQUIPOS-------------------------------------*/
 
@@ -886,6 +879,10 @@ padding-bottom: 2rem;
   .contact_form{
     padding-left: 5rem;
   }
+
+  .equipo_enfrentado {
+    justify-content: center;
+}
 /* ----FIN  Responsivo Zucelys---- */
 
 
@@ -899,7 +896,7 @@ padding-bottom: 2rem;
 
   
   /* ----Responsivo Zucelys---- */
-  .h1--home{
+  .h1_home{
     font-size: 60px;
   }
 
@@ -908,11 +905,10 @@ padding-bottom: 2rem;
     position: relative;
   }
 
-  .foot__redes h2, .contact h2{
-    font-size: 1.2rem;
+ .foot__redes h2, .contact h2{
+    font-size: 1.15rem;
 
   }
-
   /* ----FIN  Responsivo Zucelys---- */
 
 
@@ -943,6 +939,7 @@ padding-bottom: 2rem;
   /* FIN Responsive Gorka */
 
 
+  /* Responsive Zucelys */
   .body_home{
     font-size: 14px;
   }
@@ -957,7 +954,6 @@ padding-bottom: 2rem;
     padding-left: 0rem;
     padding-right: 0rem;
   }
-
 
   .politicas{
     width: 70%;
@@ -986,6 +982,14 @@ padding-bottom: 2rem;
   .descripcion_equipos{
     width: 45%;
   }
+
+  .clasification_item{
+    height: 300px;
+  }
+
+
+/* FIN Responsivo Zucelys */
+
 /* Edurne Responsive */
 .noticias_contenedor{
     display: flex;
