@@ -670,6 +670,10 @@ input[type="submit"]:hover {
   padding-bottom: 5rem;
 }
 
+.foot_redes_ico{
+  gap:0.5rem
+}
+
 .foot__legal {
   background-color: rgb(46, 46, 112);
   color: white;
@@ -681,6 +685,7 @@ input[type="submit"]:hover {
 .foot__redes {
   background-color: rgb(46, 46, 112);
   padding-bottom: 1rem;
+  justify-content: center;
 }
 
 #copyRight {
@@ -697,10 +702,8 @@ input[type="submit"]:hover {
 /*-----------------------------RESPONSIVE-------------------------------------*/
 
 @media screen and (max-width:1283px) {
-  
-  .h2_home{
-    color: #45a049;
-  }
+
+  /* ----Responsivo Zucelys---- */
   .club_item, .contact form{
     width: 90%;
     padding-top: 0.5rem;
@@ -717,10 +720,19 @@ input[type="submit"]:hover {
   }
 
   .patrocinador {
-    width: 25rem;
+    width: 15rem;
   }
 
+  .historia_home{
+    font-size:large;
+  }
+  /* ----FIN  Responsivo Zucelys---- */
+
+
  }
+
+
+ /* Table */
 
 @media screen and (max-width:900px) {
 
@@ -732,10 +744,6 @@ input[type="submit"]:hover {
 
  /* ----FIN Responsivo GORKA---- */
 
-
-  .h2_home{
-    color: #aa0b75;
-  }
   
   .estadio-imagen_historia {
     display: grid;
@@ -743,6 +751,9 @@ input[type="submit"]:hover {
    
   
   }
+
+
+
 /* ----Responsivo Zucelys---- */
 
   .clasification_item,.actualidad_item, .club_item, .partidos_item, .contact form{
@@ -756,10 +767,8 @@ input[type="submit"]:hover {
   }
 
   .contact_form{
-
     padding-left: 5rem;
   }
-
 /* ----FIN  Responsivo Zucelys---- */
 
 
@@ -770,35 +779,70 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 640px) {
 
-  .h2_home{
-    color: #eff312;
-  
+
+
+  /* ----Responsivo Zucelys---- */
+  .h1--home{
+    font-size: 60px;
   }
 
+  .h2_home {
+    font-size: 1.5rem;
+    position: relative;
+  }
 
-.amorePro {
-  width: 70%;
+  .foot__redes h2, .contact h2{
+    font-size: 1.2rem;
+
+  }
+
+  /* ----FIN  Responsivo Zucelys---- */
+
+
+
+
+
+  .amorePro {
+    width: 70%;
+  }
 }
-}
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 480px) {
 
 
-  .h2_home{
+  .h2_home, .foot__redes h2, .contact h2{
     color: #f1032b;
+
+    font-size: 100%;  
+  }
+
+  .politicas{
+    width: 70%;
+    padding-left: 9rem;
+  }
+
+
   
-  }
-
-  .gridd_home_item{
-    width: 50%;
-  }
-
+  .historia_home{
+    font-size:medium;
   }
 
 
-/*Tablet*/
-/* Edurne Responsive */
+
+
+
+  }
+
+
 
 
 /*-----------------------------FIN RESPONSIVO-------------------------------------*/
