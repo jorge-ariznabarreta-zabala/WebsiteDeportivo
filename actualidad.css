@@ -157,17 +157,4 @@ color: rgba(64, 62, 62, 0.603);
   padding-bottom: 2rem;
  
 }
-@media screen and (min-width: 481) and (max-width: 768px) {
 
-}
-
-/*Movil*/
-
-@media screen and (max-width: 480px) {
-  /* section {
-    width: 25%;
-  } */
-  .noticias_contenedor{
-    font-size: 0.625girem;
-  }
-}
