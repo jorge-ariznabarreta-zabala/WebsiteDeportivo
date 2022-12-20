@@ -549,6 +549,7 @@ input[type="submit"]:hover {
   font-size: 2rem;
 }
 .liga-1_historia img {
+  transition: 2s linear;
   border-radius: 10%;
   padding-bottom: 4rem;
   width:60%;
