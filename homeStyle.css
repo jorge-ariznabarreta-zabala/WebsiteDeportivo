@@ -38,7 +38,7 @@ body {
 .flex_body_item{
   padding-top: 2rem;
   padding-bottom: 3rem;
-} 
+}
 
 a {
   color: black;
@@ -48,6 +48,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
 /*-----------------------------Header and Menu-------------------------------------*/
 
@@ -176,6 +177,11 @@ nav a:hover {
   width: 30%;
   text-align: left;
 }
+
+.pic_actualidad:hover{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
 .pic_actualidad {
   position: relative;
   width: 100%;
@@ -248,11 +254,11 @@ nav a:hover {
 
 .contact button[type=submit]:hover {
   background-image: linear-gradient( rgba(243, 242, 247,0), rgba(11, 4, 51, 1));
-  
-} 
+
+}
 
   /*--Clasificacion-------------------------------------*/
-  
+
   .clasification_item{
     height:400px;
     width: 45%;
@@ -262,7 +268,7 @@ nav a:hover {
     gap: 0.5rem;
   }
 
-  .vs{
+  .equipo_enfrentado_span{
     font-size: 2rem;
   }
   .equipo_enfrentado_item{
@@ -279,7 +285,7 @@ nav a:hover {
   .h2_clasification{
     text-align: left;
   }
-  
+
   thead {
     position: sticky;
     top: 0;
@@ -290,7 +296,7 @@ nav a:hover {
   tr, th, td{
     border: none;
 
-  } 
+  }
 
   tbody th{
     width: 40%;
@@ -325,7 +331,7 @@ nav a:hover {
     justify-content: flex-start;
     text-align: left;
   }
- 
+
   /*--Club-------------------------------------*/
 
   .club{
@@ -340,7 +346,7 @@ nav a:hover {
     gap: 0;
   }
 
- 
+
   .club_item{
     width: 50%;
     text-align: center;
@@ -519,7 +525,7 @@ input[type="submit"]:hover {
 .estadio-imagen_historia {
   display: grid;
   grid-template-columns: auto auto auto ;
-  
+
 }
 
 .estadio-imagen_historia img {
@@ -575,7 +581,7 @@ input[type="submit"]:hover {
 }
 .historia p {
   font-size: 1rem;
-  
+
 }
 
 /*-----------------------------FIN HISTORIA-------------------------------------*/
@@ -836,12 +842,12 @@ padding-bottom: 2rem;
 
  /* ----FIN Responsivo GORKA---- */
 
-  
+
   .estadio-imagen_historia {
     display: grid;
     grid-template-columns: auto auto ;
-   
-  
+
+
   }
 
 
@@ -891,9 +897,6 @@ padding-bottom: 2rem;
   /* ----FIN  Responsivo Zucelys---- */
 
 
-
-
-
   .amorePro {
     width: 70%;
   }
@@ -910,29 +913,59 @@ padding-bottom: 2rem;
 
 @media screen and (max-width: 480px) {
 
-
-  .h2_home, .foot__redes h2, .contact h2{
-    color: #f1032b;
-
-    font-size: 100%;  
+  .body_home{
+    font-size: 14px;
   }
+
+  .logo{
+    position: relative;
+    width: 90%;
+    padding-top: 3rem;
+  }
+
+  #menu {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
 
   .politicas{
     width: 70%;
     padding-left: 9rem;
   }
 
-
-  
   .historia_home{
-    font-size:medium;
+    font-size:small;
+  }
+  .contact_form{
+    padding-left: 1rem;
   }
 
+  .contact button[type=submit] {
+    width: 55%;
+  }
+
+  .contact input[type=text] {
+    width: 45%;
+  }
+
+
+  .descripcion_equipos{
+    width: 45%;
+  }
 /* Edurne Responsive */
 .noticias_contenedor{
   display: block;
 }
 
+  .equipo_enfrentado_span{
+    font-size: 1.5rem;
+  }
+
+  .club iframe{
+    height:100px;
+    position: relative;
+  }
 
 
   }
