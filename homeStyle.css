@@ -804,10 +804,6 @@ padding-bottom: 2rem;
     height: 250px;
   }
 
-  /* .h1_equipos{
-    font-size: 60px;
-  } */
-
   /* ----Responsivo Zucelys---- */
   .club_item, .contact form{
     width: 90%;
@@ -862,7 +858,7 @@ padding-bottom: 2rem;
   }
   
 
-/* ----Responsivo Zucelys---- */
+/* ----Responsive Zucelys---- */
 
   .clasification_item,.actualidad_item, .club_item, .partidos_item, .contact form{
     width: 90%;
@@ -881,7 +877,7 @@ padding-bottom: 2rem;
   .equipo_enfrentado {
     justify-content: center;
 }
-/* ----FIN  Responsivo Zucelys---- */
+/* ----FIN  Responsive Zucelys---- */
 
 
 }
@@ -893,7 +889,7 @@ padding-bottom: 2rem;
 
 
   
-  /* ----Responsivo Zucelys---- */
+  /* ----Responsive Zucelys---- */
   .h1_home{
     font-size: 60px;
   }
@@ -907,7 +903,7 @@ padding-bottom: 2rem;
     font-size: 1.15rem;
 
   }
-  /* ----FIN  Responsivo Zucelys---- */
+  /* ----FIN Responsive Zucelys---- */
 
 
  
@@ -987,9 +983,7 @@ padding-bottom: 2rem;
   .clasification_item{
     height: 300px;
   }
-
-
-/* FIN Responsivo Zucelys */
+/* FIN Responsive Zucelys */
 
 /* Edurne Responsive */
 .noticias_contenedor{
