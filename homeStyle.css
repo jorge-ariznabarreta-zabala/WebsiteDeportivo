@@ -372,22 +372,28 @@ input[type="submit"]:hover {
 /*-----------------------------EQUIPOS-------------------------------------*/
 
 .fotosCategorias {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-gap: 2rem;
   grid-template-columns: auto auto;
   margin: 4rem ;
   justify-content: center;
 }
 
+.item_flex{
+  position: relative;
+  width: 45%;
+}
+
 /*Texto*/
 
 .equipo_texto{
   border: black 0.3rem solid;
-  margin-left: 30%;
+  /* margin-left: 30%; */
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1rem;
-  width: 50%;
+  /* width: 50%; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -400,7 +406,7 @@ input[type="submit"]:hover {
   margin-bottom: 1rem;
 }
 
-.h1--equipos {
+.h1_equipos {
   color: rgb(34, 58, 177);
   font-size: 4rem;
   padding: 1rem;
@@ -637,6 +643,10 @@ input[type="submit"]:hover {
 
 @media screen and (max-width:1283px) {
 
+  .imagen{
+    height: 250px;
+  }
+
   /* ----Responsivo Zucelys---- */
   .club_item, .contact form{
     width: 90%;
@@ -660,21 +670,20 @@ input[type="submit"]:hover {
   .historia_home{
     font-size:large;
   }
-  /* ----FIN  Responsivo Zucelys---- */
-
-
+ 
  }
+ /* ----FIN  Responsivo Zucelys---- */
 
-
- /* Table */
+ /* Tablet */
 
 @media screen and (max-width:900px) {
 
 /* ----Responsivo GORKA---- */
 
-  /*.imagen{
-    height: 200px;
- }
+.imagen{
+  height: 400px;
+}
+
 
  /* ----FIN Responsivo GORKA---- */
 
@@ -684,6 +693,11 @@ input[type="submit"]:hover {
     grid-template-columns: auto auto ;
    
   
+  }
+
+  .item_flex{
+
+    width: 100%;
   }
 
 
@@ -733,11 +747,12 @@ input[type="submit"]:hover {
   /* ----FIN  Responsivo Zucelys---- */
 
 
+  /* .imagen{
+    height: 250px;
+  } */
 
-
-
-  .amorePro {
-    width: 70%;
+  .h1--equipos{
+    font-size: 60px;
   }
 }
 
@@ -770,6 +785,9 @@ input[type="submit"]:hover {
     font-size:medium;
   }
 
+  .imagen{
+    height: 200px;
+  }
 
 
 
