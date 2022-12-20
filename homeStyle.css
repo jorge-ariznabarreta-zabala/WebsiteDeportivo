@@ -371,12 +371,17 @@ input[type="submit"]:hover {
 
 /*-----------------------------EQUIPOS-------------------------------------*/
 
-/*Fotos*/
+.fotosCategorias {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto;
+  margin: 4rem ;
+  justify-content: center;
+}
 
-.amorePro,
-.amoreFem,
-.amoreJuv,
-.amoreInf {
+/*Texto*/
+
+.equipo_texto{
   border: black 0.3rem solid;
   margin-left: 30%;
   margin-top: 1rem;
@@ -401,19 +406,25 @@ input[type="submit"]:hover {
   padding: 1rem;
 }
 
-.futProfesional, .femProfesional, .futJuvenil, .amorebietaInfantil{
-  padding: auto;
+/*Transicion*/
+
+.equipo_foto{
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: linear-gradient(
+    180deg,
+    #bee2ff 0,
+    #5096cc 50%,
+    #005197 100%
+  );
 }
 
-
-
-
-.fotosCategorias {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: auto auto;
-  margin: 4rem ;
+.equipo_foto:hover{
+  padding: 4rem;
 }
+/*Fondo*/
 
 .body--equipos {
   background-image: linear-gradient(
@@ -424,90 +435,13 @@ input[type="submit"]:hover {
   );
   text-align: center;
 }
-.foto1{
-  width: 100%;
-}
 
-.futPro {
-  width: 100%;
-  height: 100%;
-  
-}
 
-.femFutPro {
-  width: 100%;
-  height: 100%;
-}
 .imagen{
-  height: 350px;/*--------------------------------*/
-}
-.futJuv {
-  width: 100%;
-  height: 100%;
+  height: 350px;
 }
 
-.futInfantil {
-  width: 100%;
-  height: 100%;
-}
 
-/*Transiciones Imagenes*/
-
-.futPro {
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
-  background-color: linear-gradient(
-    180deg,
-    #bee2ff 0,
-    #5096cc 50%,
-    #005197 100%
-  );
-}
-.futPro:hover {
-  padding: 4rem;
-}
-
-.femFutPro {
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
-  background-color: linear-gradient(
-    180deg,
-    #bee2ff 0,
-    #5096cc 50%,
-    #005197 100%
-  );
-}
-.femFutPro:hover {
-  padding: 4rem;
-}
-
-.futJuv {
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
-  background-color: linear-gradient(
-    180deg,
-    #bee2ff 0,
-    #5096cc 50%,
-    #005197 100%
-  );
-}
-.futJuv:hover {
-  padding: 4rem;
-}
-
-.futInfantil {
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
-  background-color: linear-gradient(
-    180deg,
-    #bee2ff 0,
-    #5096cc 50%,
-    #005197 100%
-  );
-}
-.futInfantil:hover {
-  padding: 4rem;
-}
 
 
 
@@ -896,7 +830,7 @@ padding-bottom: 2rem;
 
 /* ----Responsivo GORKA---- */
 
-  .imagen{
+  /*.imagen{
     height: 200px;
  }
 
