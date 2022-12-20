@@ -268,10 +268,13 @@ nav a:hover {
   .equipo_enfrentado_item{
     width: 20%;
   }
+  .equipo_enfrentado{
+    gap:1rem
+  }
 
   .clasification_flex{
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
   }
   .h2_clasification{
     text-align: left;
@@ -658,6 +661,7 @@ input[type="submit"]:hover {
 
 .patrocinador {
   width: 20rem;
+  position: relative;
 }
 
 .foot__patrocinadores_div {
@@ -688,19 +692,56 @@ input[type="submit"]:hover {
 }
 
 
+
+
 /*-----------------------------RESPONSIVE-------------------------------------*/
 
-/* Diseño para celulares */
+@media screen and (max-width:1283px) {
+  
+  .h2_home{
+    color: #45a049;
+  }
+  .club_item, .contact form{
+    width: 90%;
+    padding-top: 0.5rem;
+  }
 
+  .clasification_item{
+    width: 45%;
 
+  }
 
+  .club{
+    background-image: linear-gradient(rgb(4, 4, 77), rgba(245, 245, 243,0)),
+       url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
+  }
 
-/* Diseño para tabletas */ 
-@media screen and (max-width: 900px) {
-	
+  .patrocinador {
+    width: 25rem;
+  }
+
+ }
+
+@media screen and (max-width:900px) {
+
+/* ----Responsivo GORKA---- */
 
   .imagen{
     height: 200px;
+ }
+
+ /* ----FIN Responsivo GORKA---- */
+
+
+  .h2_home{
+    color: #aa0b75;
+  }
+  
+  .estadio-imagen_historia {
+    display: grid;
+    grid-template-columns: auto auto ;
+   
+  
   }
 /* ----Responsivo Zucelys---- */
 
@@ -728,9 +769,32 @@ input[type="submit"]:hover {
 /*Movil*/
 
 @media screen and (max-width: 640px) {
- 
+
+  .h2_home{
+    color: #eff312;
+  
+  }
+
+
+.amorePro {
+  width: 70%;
+}
 }
 
+
+@media screen and (max-width: 480px) {
+
+
+  .h2_home{
+    color: #f1032b;
+  
+  }
+
+  .gridd_home_item{
+    width: 50%;
+  }
+
+  }
 
 
 /*Tablet*/
