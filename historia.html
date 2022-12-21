@@ -8,6 +8,8 @@
     <title>Club Historia</title>
     <link rel="stylesheet" href="homeStyle.css" />
     <link rel="shortcut icon" href="./img/logo-sdamorebieta.ico" type="image/x-icon">
+    <script src="home.js"></script>
+
 </head>
 
 <body>
@@ -16,13 +18,23 @@
     <div class="flex_row" id="menu">
         <div class="flex_row logo_etiqueta">
             <a href="index.html"><img class="logo" src="https://sdamorebieta.eus/wp-content/uploads/2021/10/logo-sdamorebieta.svg" alt="Logo"></a>
-            <h1 class="h1--home">AmoreFoot</h1>
+            <h1 class="h1_home">AmoreFoot</h1>
         </div>
-        <nav class="flex_row">
-            <a href="equipo.html">Equipos </a>
-            <a href="historia.html">Club</a>
-            <a href="actualidad.html">Noticias </a>
-            <a href="tienda.html">Tienda </a>
+        <nav>
+            <input type="checkbox" id="check_menu">
+            <label for="check_menu" class="checkbtn_menu">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="flex_row menu_item">
+                <div class="logo_etiqueta2">
+                    <a href="index.html"><img class="logo" src="https://sdamorebieta.eus/wp-content/uploads/2021/10/logo-sdamorebieta.svg" alt="Logo"></a>
+                    <h1 class="h1_home">AmoreFoot</h1>
+                </div>
+                <li><a href="equipo.html">Equipos</a></li>
+                <li><a href="historia.html">Club</a></li>
+                <li><a href="actualidad.html">Noticias</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
         </nav>
     </div>
 </header>
