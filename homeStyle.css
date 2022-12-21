@@ -4,12 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 html,
 body {
   width: 100%;
-  /* min-width: 320px; */
+  min-width: 320px;
   font-size: 16px;
   font-family: Arial, Verdana, Tahoma, Trebuchet, sans-serif;
 }
@@ -53,11 +54,12 @@ a:hover {
 /*-----------------------------Header and Menu-------------------------------------*/
 
 #header {
-  background-image: url(./img/header-image.png);
+  /* background-image: url(./img/header-image.png); */
+  background-position-y: 20%;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 50rem;
 
-  height: 40rem;
 }
 
 #menu {
@@ -90,13 +92,16 @@ nav a:hover {
   align-items: center;
 }
 
+.logo_etiqueta2{
+  display: none;
+}
 
 .logo{
     position: relative;
     width: 120%;
 }
 
-.h1--home{
+.h1_home{
     color:rgba(9,51,109,255);
     position: relative;
     font-size: 90px;
@@ -117,6 +122,19 @@ nav a:hover {
 .h2_home--small{
   font-size: 1.7rem;
 
+}
+
+.checkbtn_menu{
+  font-size: 30px;
+  color: rgba(9,51,109,255);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check_menu{
+  display: none;
 }
 
 /*--Proximos Partidos-------------------------------------*/
@@ -367,22 +385,14 @@ nav a:hover {
     font-size:x-large;
   }
 
-  /*-----------------------------EQUIPOS-------------------------------------*/
-
-
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
 
 /*-----------------------------EQUIPOS-------------------------------------*/
 
 .fotosCategorias {
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 2rem;
-  grid-template-columns: auto auto;
-  margin: 4rem ;
+  gap: 2rem;
+  margin: 2rem ;
   justify-content: center;
 }
 
@@ -653,7 +663,8 @@ input[type="submit"]:hover {
 .actualidad_h2{
 font-size: 3em;
 padding: 0.8rem;
-margin-left: 8rem;
+color:rgba(9,51,109,255);
+
 }
 .noticias_h3{
 padding: 2rem;
@@ -725,7 +736,7 @@ animation-play-state: paused;
 .text_slider{
 position: absolute;
   bottom: 8vw;
- right: 4vw;
+  right: 4vw;
   background-color: rgba(56, 56, 123, 0.5);
   color: aliceblue;
   font-size: 2.5vw;
@@ -751,8 +762,6 @@ bottom: 20px;
 text-align: center;
 padding: 5px;
 background-color: rgba(0,0,0,0.5);
-  
-z-index: 100;
 }
 
 .slider-controler li {
@@ -813,9 +822,9 @@ padding-bottom: 2rem;
     height: 250px;
   }
 
-  /* .h1_equipos{
-    font-size: 60px;
-  } */
+  .h1_home{
+    font-size: 80px;
+  }
 
   /* ----Responsivo Zucelys---- */
   .club_item, .contact form{
@@ -857,7 +866,7 @@ padding-bottom: 2rem;
     width: 100%;
   }
   .h1_e{
-    font-size: 14px;
+    font-size: 3rem;
   }
 
  /* ----FIN Responsivo GORKA---- */
@@ -874,7 +883,11 @@ padding-bottom: 2rem;
   /* ----FIN Responsivo NASREDDIN---- */
 
 
-/* ----Responsivo Zucelys---- */
+/* ----Responsive Zucelys---- */
+
+  #header {
+    background-position-x: center;  
+  }
 
   .clasification_item,.actualidad_item, .club_item, .partidos_item, .contact form{
     width: 90%;
@@ -889,7 +902,11 @@ padding-bottom: 2rem;
   .contact_form{
     padding-left: 5rem;
   }
-/* ----FIN  Responsivo Zucelys---- */
+
+  .equipo_enfrentado {
+    justify-content: center;
+}
+/* ----FIN  Responsive Zucelys---- */
 
 
 }
@@ -901,8 +918,8 @@ padding-bottom: 2rem;
 
 
   
-  /* ----Responsivo Zucelys---- */
-  .h1--home{
+  /* ----Responsive Zucelys---- */
+  .h1_home{
     font-size: 60px;
   }
 
@@ -911,36 +928,67 @@ padding-bottom: 2rem;
     position: relative;
   }
 
-  .foot__redes h2, .contact h2{
-    font-size: 1.2rem;
+ .foot__redes h2, .contact h2{
+    font-size: 1.15rem;
 
   }
 
-  /* ----FIN  Responsivo Zucelys---- */
+ 
+  /* ----FIN Responsive Zucelys---- */
 
 
-  
-
-
+ 
+  /* responsive acualidad*/
+.actualidad_h2{
+  font-size: 1.5rem;
 }
+.noticias_contenedor{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.text_slider{
+  bottom: 16vw; 
+}
+}
+
+
+
+
 
 @media screen and (max-width: 480px) {
 
+
+  /* Responsive Gorka */
+  .h1_e{
+    font-size: 1.7rem;
+  }
+  /* FIN Responsive Gorka */
+
+
+  /* Responsive Zucelys */
   .body_home{
     font-size: 14px;
   }
 
+  .h1_home{
+    font-size: 30px;
+  }
+
   .logo{
     position: relative;
-    width: 90%;
-    padding-top: 3rem;
+    width: 50%;
+  }
+
+  .logo_etiqueta {
+    gap: 0rem;
   }
 
   #menu {
     padding-left: 0rem;
     padding-right: 0rem;
   }
-
 
   .politicas{
     width: 70%;
@@ -969,11 +1017,69 @@ padding-bottom: 2rem;
   .descripcion_equipos{
     width: 45%;
   }
-/* Edurne Responsive */
-  .noticias_contenedor{
-    display: block;
+
+  .clasification_item{
+    height: 300px;
   }
 
+ #menu nav {
+   padding-top: 0rem;
+   display: inline-block;
+  }
+  .checkbtn_menu{
+    display: block;
+  } 
+  .menu_item{
+    flex-direction: column;
+    gap: 0rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  #menu{
+    opacity: 1;
+  }
+
+  header{
+    z-index: 100;
+  }
+
+  #menu nav ul li{
+    margin: 40px 0;
+    line-height: 30px;
+  }
+
+  #check_menu:checked ~ ul{
+    left:0;
+  } 
+
+  .logo_etiqueta2{
+    display: flex;
+  }
+/* FIN Responsive Zucelys */
+
+/* Edurne Responsive */
+.noticias_contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   margin: 0 auto;
+   padding-top: 2rem;
+ 
+  
+}
+.text_slider{
+  bottom: 14vw; 
+}
   .equipo_enfrentado_span{
     font-size: 1.5rem;
   }
