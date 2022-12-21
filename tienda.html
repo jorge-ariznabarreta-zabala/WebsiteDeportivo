@@ -5,16 +5,187 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todos nuestros productos de SD AmoreFoot">
     <title>Tienda</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="homeStyle.css">
+    <link rel="shortcut icon" href="./img/logo-sdamorebieta.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="home.js"></script>
+    <script src="tienda.js"></script>
+    
+    <script src="https://kit.fontawesome.com/8c655d3807.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-    <header> menu de navegación comun a todas la paginas</header>
-    <main>información que queremos</main>
-    <footer>REDES y CONTACTO <br>
-        PATROCINADORES <br>
-        LEGAL Y COPYRIGHT <br> comun a todas la paginas</footer>
+    <div class="gridd">
+
+    <!-------------HEADER -----------------> 
+    <header class="gridd_home_item" id="header">
+        <div class="flex_row" id="menu">
+            <div class="flex_row logo_etiqueta">
+                <a href="index.html"><img class="logo" src="https://sdamorebieta.eus/wp-content/uploads/2021/10/logo-sdamorebieta.svg" alt="Logo"></a>
+                <h1 class="h1_home">AmoreFoot</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check_menu">
+                <label for="check_menu" class="checkbtn_menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="flex_row menu_item">
+                    <div class="logo_etiqueta2">
+                        <a href="index.html"><img class="logo" src="https://sdamorebieta.eus/wp-content/uploads/2021/10/logo-sdamorebieta.svg" alt="Logo"></a>
+                        <h1 class="h1_home">AmoreFoot</h1>
+                    </div>
+                    <li><a href="equipo.html">Equipos</a></li>
+                    <li><a href="historia.html">Club</a></li>
+                    <li><a href="actualidad.html">Noticias</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-------------BODY -----------------> 
+    <main>
+        <section>
+            <h2>ENTRENAMIENTO</h2>
+            <div class="flex_row">
+                <div class="gridd_home_item noticias_contenedor_text">                    
+                    <img src="img\bermudaBolsillo.png" alt="Bermuda con bolsillo" width="300" height="400">
+                    <p >Bermuda con bolsillo</p>
+                    <p class="precio">30,00 €</p>
+                        <button onclick="pedirProducto('Bermuda con bolsillo')">Añadir al carrito</button>
+                </div>
+                <div class="gridd_home_item noticias_contenedor_text">                    
+                    <img src="img\camiEntrena.png" alt="Camiseta entrenamiento" width="300" height="400">
+                    <p >Camiseta de entrenamiento</p>
+                        <p class="precio">33,00 €</p>
+                        <button onclick="pedirProducto('Camiseta entrenamiento')">Añadir al carrito</button>
+                </div>
+                <div class="gridd_home_item noticias_contenedor_text">
+                    <img src="img\Chaqueta.png" alt="Chaqueta chandal" width="300" height="400">
+                    <p >Chaqueta chandal</p>
+                        <p class="precio">53,00 €</p>
+                        <button onclick="pedirProducto('Chaqueta chandal')">Añadir al carrito</button>
+                </div>
+                <div class="gridd_home_item noticias_contenedor_text">                    
+                    <img src="img\pantalon.png" alt="Pantalón" width="300" height="400">
+                    <p >Pantalon chandal paseo</p>
+                        <p class="precio">53,00 €</p>
+                        <button onclick="pedirProducto('Pantalón')">Añadir al carrito</button>
+                    </div>
+                <div class="gridd_home_item noticias_contenedor_text">
+                    <img src="img\polo.png" alt="Polo" width="300" height="400">
+                    <p >Polo</p>
+                        <p class="precio">53,00 €</p>
+                        <button onclick="pedirProducto('Polo')">Añadir al carrito</button>
+                </div>
+                <div class="gridd_home_item noticias_contenedor_text">
+                    <img src="img\sudadera.png" alt="Sudadera" width="300" height="400">
+                    <p >Sudadera entrenamiento</p>
+                        <p class="precio">53,00 €</p>
+                        <button onclick="pedirProducto('Sudadera')">Añadir al carrito</button>
+                </div>
+                
+            </div>
+        </section>
+        <section>
+            <h2>EQUIPACIONES</h2>
+            <div class="flex_row">
+                <div class="gridd_home_item noticias_contenedor_text">
+                    <img src="img\primeraEqui.png" alt="Camiseta Primera Equipacion" width="300" height="400">
+                    <p >Camiseta Primera Equipacion</p>
+                        <p class="precio">63,00 €</p>
+                        <button onclick="pedirProducto('Camiseta Primera Equipacion')">Añadir al carrito</button>
+                </div>
+                <div class="gridd_home_item noticias_contenedor_text">
+                    <img src="img\segundaEqui.png" alt="Camiseta Segunda Equipacion" width="300" height="400">
+                    <p >Camiseta Primera Equipacion </p>
+                        <p class="precio">63,00 €</p>
+                        <button onclick="pedirProducto('Camiseta Segunda Equipacion')">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+        <section>
+         <h2>COMPLEMENTOS</h2>
+         <div  class="flex_row">
+            <div class="gridd_home_item noticias_contenedor_text">
+                <img src="img\bidonAgua.png" alt="Bidón" width="300" height="400">
+                <p >Bidón Agua</p>
+                    <p class="precio">11,00 €</p>
+                    <button onclick="pedirProducto('Bidón')">Añadir al carrito</button>
+            </div> 
+            <div class="gridd_home_item noticias_contenedor_text">
+                <img src="img\bufanda.png" alt="Bufanda" width="300" height="400">
+                <p >Bufandas</p>
+                    <p class="precio">18,00 €</p>
+                    <button onclick="pedirProducto('Bufanda')">Añadir al carrito</button>
+            </div> 
+            <div class="gridd_home_item noticias_contenedor_text">
+                <img src="img\llavero.png" alt="Llavero" width="300" height="400">
+                <p class="precio">8,00 €</p>
+                <button onclick="pedirProducto('Llavero')">Añadir al carrito</button>
+            </div> <div class="gridd_home_item noticias_contenedor_text">
+                <img src="img\paraguas.png" alt="Paraguas" width="300" height="400">
+                <p >Paraguas</p>
+                    <p class="precio">18,00 €</p>
+                    <button onclick="pedirProducto('Paraguas')">Añadir al carrito</button>
+            </div> <div class="gridd_home_item noticias_contenedor_text">                
+                <img src="img\taza.png" alt="Taza" width="300" height="400">
+                <p >Taza</p>
+                    <p class="precio">13,00 €</p>
+                    <button onclick="pedirProducto('Taza')">Añadir al carrito</button>
+            </div> <div class="gridd_home_item noticias_contenedor_text">
+                <img src="img\zapa.png" alt="Zapatillas" width="300" height="400">            
+                <p >Zapatillas De Casa</p>
+                    <p class="precio">23,00 €</p>
+                    <button onclick="pedirProducto('Zapatillas')">Añadir al carrito</button>
+            </div>
+         </div>
+        </section>
+        <section>
+            <p>Importe </p> 
+            <p id="total"></p> 
+        </section>
+        
+    </main>
+<!-------------FOOTER ----------------->
+<footer id= "footer" class="gridd_home_item ">
+
+    <div class="foot__redes">
+        <h2 class="h2_home h2_home--small">síguenos en nuestras redes sociales</h2>
+        <div class="foot_redes_ico flex_row">
+            <a href="https://www.facebook.com/sdamorebieta"><i class="fa-brands fa-facebook ico"></i></a>
+            <a href="https://twitter.com/SDAmorebieta"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@sdamorebieta7233"><i class="fa-brands fa-youtube "></i></a>
+            <a href="https://www.instagram.com/sdamorebieta/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="foot__patrocinadores">
+            <h2 class="h2_home">patrocinadores</h2>
+            <div class="foot__patrocinadores_div flex_row">
+                <a href=""><img class="patrocinador" src="https://www.sidenor.com/wp-content/uploads/2016/11/SIDENOR-logo.png" alt="sidenor"></a>
+                <a href=""><img class="patrocinador" src=".\img\Logo-CaixaBank--500x281.png" alt="Caixabank"></a>
+                <a href=""><img class="patrocinador" src="https://www.beotibar.net/wp-content/uploads/2021/01/beotibar-logotipo.png" alt="Beotibar Recycling"></a>
+                <a href=""><img class="patrocinador" src="https://baturamobile.com/wp-content/uploads/2022/01/lointek-logo-gris.png" alt="lointek"></a>
+             </div>
+        </div>
+    <div class="foot__legal">
+        <div id="copyRight"> &copy; Amorebieta 2022</div>
+
+        <div class="flex_row">
+            <div> <a href="404.html">Política de Privacidad </a> </div>
+            <div> <a href="404.html">Política de Cookies</a> </div>
+            <div> <a href="404.html">Aviso Legal </a> </div>
+        </div>
+
+    </div>
+</footer>
+
+    </div>
 </body>
 
 </html>

@@ -1,129 +1,1126 @@
-
 @charset "utf-8";
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-
-html, body {
-    width: 100%;
-    min-width: 320px;
-    font-size: 16px;
-    font-family: Arial, Verdana, Tahoma, Trebuchet, sans-serif;
+html,
+body {
+  width: 100%;
+  min-width: 320px;
+  font-size: 16px;
+  font-family: Arial, Verdana, Tahoma, Trebuchet, sans-serif;
 }
 
-
-.gridd{
-    display: grid;
-    grid-template-columns: 80% 20%;
-    /* grid-row: 5% 30% auto auto 10%; */
-    justify-content: stretch;
+.gridd_home {
+  display: grid;
+  justify-content: stretch;
 }
 
-
-.gridd__item{
-    border: 4px solid  black;
-    text-align: center;
-    /* line-height: 150px; */
+.gridd_home_item {
+  text-align: center;
 }
-
-
-
 
 .flex_row{
     display: flex;
     justify-content:center;
+    flex-wrap: wrap;
     gap: 2rem;
-} 
-
-
-.flex_colum{
-    display: flex;
-    flex-direction: column;
-    /* gap: 1rem; */
-} 
-
-.flex__item{
-    border: solid black;
 }
 
-.about__flex_item_img{
-    
-    /* flex-basis: 20%;  */
-     width: 20%;  
+.flex_colum {
+  display: flex;
+  flex-direction: column;
 }
 
-
-a{
-    color: white;
-    text-decoration: none;
+.flex_body_item{
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 
 /*-----------------------------Header and Menu-------------------------------------*/
 
-#header{
-    background-image: url(./img/header-image.png);
-    background-repeat: no-repeat; 
-    background-size: cover;
-
-    text-align: center;
-
-    height: 50rem;
-    grid-column: 1/3;
+#header {
+  /* background-image: url(./img/header-image.png); */
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
 
 }
 
-#menu{
-    justify-content: space-around;
-    grid-column: 1/3;
+#menu {
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  transition: 0.7s;
+  background-color: white;
+  opacity: 0.8;
+}
 
+nav{
+  padding-top: 3rem;
 
 }
 
-/*-----------------------------Formulario-------------------------------------*/
-form{
-    width: 30%;
-    padding-left: 35%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;  
+nav a {
+  font-size: 1.5rem;
+  color:rgba(9,51,109,255);
+  font-weight: 700;
+  height: 2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+
+}
+
+.logo_etiqueta{
+  align-items: center;
+}
+
+.logo_etiqueta2{
+  display: none;
+}
+
+.logo{
+    position: relative;
+    width: 120%;
+}
+
+.h1_home{
+    color:rgba(9,51,109,255);
+    position: relative;
+    font-size: 90px;
+}
+
+.h2_home {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.h2_home--blue{
+  color:rgba(9,51,109,255);
+}
+
+.h2_home--small{
+  font-size: 1.7rem;
+
+}
+
+.checkbtn_menu{
+  font-size: 30px;
+  color: rgba(9,51,109,255);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check_menu{
+  display: none;
+}
+
+/*--Proximos Partidos-------------------------------------*/
+.partidos{
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+.partidos_item {
+  width: 30%;
+  align-items: flex-start;
+}
+.equipo_enfrentado{
+  align-items: center;
+  justify-content: left;
+  padding-top: 2rem;
+}
+
+.equipo_enfrentado_item{
+  width: 25%;
+}
+
+.escudoIC,
+.escudoRS {
+  position: relative;
+  object-fit: cover;
+  width: 90%;
+}
+
+.escudoMUR {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+}
+
+.escudoSDA {
+  position: relative;
+  object-fit: cover;
+  width: 70%;
+}
+
+/*--Actualidad-------------------------------------*/
+
+.actualidad {
+  background-image: linear-gradient(
+      to right,
+      rgba(243, 242, 247, 0),
+      rgba(11, 4, 51, 1)
+    ),
+    url("https://sdamorebieta.eus/wp-content/uploads/2022/12/etxano--1200x800.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+  width: 100%;
+}
+
+.actualidad_item{
+  position: relative;
+  width: 30%;
+  text-align: left;
+}
+
+.pic_actualidad:hover{
+  padding: 1rem;
+}
+.pic_actualidad {
+  position: relative;
+  width: 100%;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+.foto_actualidad{
+  position: relative;
+  width: 90%;
+}
+
+.fecha_actualidad,
+.amorebieta_actualidad {
+  color: white;
+  font-size: 1.5rem;
+}
+.titular_actualidad {
+  color: white;
+  font-size: 2.3rem;
+}
+.titular_principal_actualidad {
+  color: white;
+  font-size: 3rem;
 }
 
 
-input , textarea{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-width: 0.1rem;
-    border-color: rgb(128, 128, 128);
-    resize:none;
+
+/*--Contactenos-------------------------------------*/
+.contact{
+  justify-content: center;
+
 }
 
- input[type=submit] {
-    width: 4rem;
-    background-color: rgb(59, 139, 139);
-    color: white;
-    padding-top:0.7rem;
-    padding-bottom:0.7rem;
-    border-radius: 0.7rem;
+.contact_form{
+  padding-top: 2rem;
+  padding-left: 12rem;
+  justify-content: center;
+}
+
+.contact form{
+
+  width: 50%;
+  text-align: left;
+  margin:0px auto;
+
+}
+.contact  button[type=submit] {
+  width: 25%;
+  height: 3rem;
+  position: relative;
+  background-color:rgb(46, 46, 112);
+  color: white;
+  padding-top:0.7rem;
+  padding-bottom:0.7rem;
+  border: none;
+}
+
+.contact  input[type=text] {
+  width: 40%;
+  height: 3rem;
+  position: relative;
+  color: black;
+}
+
+.contact_label{
+  width: 80%;
+  position: relative;
+  padding-top:0.7rem;
+  padding-bottom:0.7rem;
+}
+
+
+.contact button[type=submit]:hover {
+  background-image: linear-gradient( rgba(243, 242, 247,0), rgba(11, 4, 51, 1));
+
+}
+
+  /*--Clasificacion-------------------------------------*/
+
+  .clasification_item{
+    height:400px;
+    width: 45%;
   }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;     
-  } 
 
+  .pos-club{
+    gap: 0.5rem;
+  }
+
+  .equipo_enfrentado_span{
+    font-size: 2rem;
+  }
+  .equipo_enfrentado_item{
+    width: 20%;
+  }
+  .equipo_enfrentado{
+    gap:1rem
+  }
+
+  .clasification_flex{
+    align-items: center;
+    gap: 3rem;
+  }
+  .h2_clasification{
+    text-align: left;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+    background-color: rgb(247, 246, 253);
+    border: none;
+  }
+
+  tr, th, td{
+    border: none;
+
+  }
+
+  tbody th{
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  tr{
+    width: auto;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+
+  .pos-club{
+    align-items: center;
+    justify-content: left;
+
+  }
+
+  .clasification_table{
+    overflow:scroll;
+  }
+
+  .imp{
+    width: 15%;
+    position: relative;
+  }
+
+  .ultimo_resultado{
+    width: 80%;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  /*--Club-------------------------------------*/
+
+  .club{
+      background-image: linear-gradient(to left, rgba(245, 245, 243,0), rgb(4, 4, 77)),
+       url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
+      text-align: center;
+      background-position-y: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .club_panel{
+    gap: 0;
+  }
+
+
+  .club_item{
+    width: 50%;
+    text-align: center;
+  }
+
+  .club iframe{
+    width: 40%;
+    height:200px;
+    position: relative;
+  }
+  .club_item{
+    text-align: left;
+    width: 45%;
+  }
+
+  .historia_home{
+    color: white ;
+    font-size:x-large;
+  }
+
+
+/*-----------------------------EQUIPOS-------------------------------------*/
+
+.fotosCategorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem ;
+  justify-content: center;
+}
+
+.item_flex{
+  position: relative;
+  width: 45%;
+}
+
+/*Texto*/
+
+.equipo_texto{
+  border: black 0.3rem solid;
+  /* margin-left: 30%; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  /* width: 50%; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*Titulos*/
+
+.h2--equipos {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.h1_equipos {
+  color: rgb(34, 58, 177);
+  font-size: 4rem;
+  padding: 1rem;
+  position: relative;
+}
+
+/*Transicion*/
+
+.equipo_foto{
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: linear-gradient(
+    180deg,
+    #bee2ff 0,
+    #5096cc 50%,
+    #005197 100%
+  );
+}
+
+.equipo_foto:hover{
+  padding: 4rem;
+}
+/*Fondo*/
+
+.body--equipos {
+  background-image: linear-gradient(
+    180deg,
+    #bee2ff 0,
+    #5096cc 50%,
+    #005197 100%
+  );
+  text-align: center;
+}
+
+
+.imagen{
+  height: 350px;
+}
+
+
+
+
+
+/*----------------------------- FIN EQUIPOS-------------------------------------*/
+
+/*-----------------------------HISTORIA-------------------------------------*/
+
+.datos_historia ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.amorobieta_historia {
+  padding: 2rem;
+}
+
+.datos_historia {
+  padding: 2rem;
+  background-image: url("./img/amorobieta-4.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: sepia(55%);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+  background-size: cover;
+}
+.datos_historia ul li{
+  font-size: 1.5rem;
+}
+.amorbi_historia {
+  display: flex;
+  justify-content: center;
+}
+
+.amorbi_historia img {
+  width: 15rem;
+}
+
+.trofeos_historia {
+  padding: 3rem;
+  text-align: center;
+}
+
+.trofeos_historia h3 {
+  font-size: 3rem;
+}
+
+.trofeos_historia li {
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+.estadio_historia {
+  padding: 3rem;
+  text-align: center;
+}
+
+.estadio_historia h3 {
+  font-size: 3rem;
+}
+
+.estadio_historia li {
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+.amorobieta-1_historia span {
+  color: rgb(115, 18, 206);
+}
+
+.estadio-imagen_historia {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+
+}
+
+.estadio-imagen_historia img {
+  transition: 5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 2.5rem;
+}
+
+.estadio-img_historia h2 {
+  padding: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.liga_historia {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.liga-1_historia {
+  text-align: center;
+}
+.liga_historia h3 {
+  font-size: 2rem;
+}
+.liga-1_historia img {
+  transition: 2s linear;
+  border-radius: 10%;
+  padding-bottom: 4rem;
+  width:60%;
+}
+
+.historia {
+  padding: 4rem;
+}
+.historia {
+  background-image: url("./img/amorobieta-4.jpeg");
+  text-align: justify;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: sepia(65%);
+}
+.historia h2 {
+  font-size: 2rem;
+  text-align: left;
+}
+.historia h3 {
+  font-size: 1.5rem;
+  text-align: left;
+}
+.historia p {
+  font-size: 1rem;
+
+}
+
+/*-----------------------------FIN HISTORIA-------------------------------------*/
 
 /*-----------------------------footer-------------------------------------*/
 
-#footer{
-    background-color: brown; 
-    grid-column: 1/3;
+#footer {
+  background-image: linear-gradient(
+      to right,
+      rgba(48, 7, 231, 0.8),
+      rgba(230, 40, 40, 0.9)
+    ),
+    url("https://sdamorebieta.eus/wp-content/uploads/2022/09/equipo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.patrocinador {
+  width: 20rem;
+  position: relative;
+}
+
+.foot__patrocinadores_div {
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.foot_redes_ico{
+  gap: 1.5rem;
+  font-size: 2.5em;
+}
+
+.foot__legal {
+  background-color: rgb(46, 46, 112);
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.foot__redes {
+  background-color: rgb(46, 46, 112);
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+
+#copyRight {
+  padding-bottom: 1rem;
+}
+
+.foot__legal a {
+  color: white;
+}
+
+.fa-facebook:hover {
+  color: rgb(30, 50, 163);
+}
+
+.fa-twitter:hover {
+  color:rgb(64, 187, 203);
+}
+
+.fa-youtube:hover {
+  color: rgb(226, 10, 10);
+}
+
+.fa-instagram:hover {
+  color: rgb(217, 41, 94)
+}
+
+
+/*------------------------------ACTUALIDAD----------------------------------*/
+
+.noticias_h2{
+  padding: 2rem;
+  text-align: center;
+  
+}
+.actualidad_h2{
+font-size: 3em;
+padding: 0.8rem;
+color:rgba(9,51,109,255);
 
 }
+.noticias_h3{
+padding: 2rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+.noticias_section{
+width: 75vw;
+margin: 0 auto;
+
+}
+.noticias_imagen {
+max-width: 100%;
+padding-bottom: 0.8rem;
+padding-top: 0.8rem;
+
+
+}
+.noticias_article{
+ text-align: justify;
+ padding: 0.6rem;
+ padding-bottom: 2rem;
+}
+.noticias_article p:first-child::first-letter{
+font-size: 3em;
+}
+.noticias_slider {
+ max-width: 100%;
+margin: 0 auto;
+}
+.div_slider{
+  position: relative;
+} 
+.slides_ul {
+position: relative;
+display: flex;
+overflow: hidden;
+padding-left: 0;
+     
+}
+.slide_li {
+list-style: none;
+background-color: white;
+width: 100%;
+flex-shrink: 0;
+animation-name: slide;
+animation-duration: 15s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+.slides_ul:hover .slide_li {
+animation-play-state: paused;
+}
+@keyframes slide {
+0% { transform: translateX(0); }
+20% { transform: translateX(0); }
+
+25% { transform: translateX(-100%); }
+45% { transform: translateX(-100%); }
+
+50% { transform: translateX(-200%); }
+70% { transform: translateX(-200%); }
+
+75% { transform: translateX(-300%); }
+100% { transform: translateX(-300%); }
+
+}
+.text_slider{
+position: absolute;
+  bottom: 8vw;
+  right: 4vw;
+  background-color: rgba(56, 56, 123, 0.5);
+  color: aliceblue;
+  font-size: 2.5vw;
+}
+.slide_li img {
+width: 100%;
+vertical-align: top;
+}
+.slide_li a {
+
+display: inline-block;
+position: relative;
+}
+.noticias_link{
+color: aliceblue;
+font-size: medium;
+}
+.slider-controler {
+position: absolute;
+left: 0;
+right: 0;
+bottom: 20px;
+text-align: center;
+padding: 5px;
+background-color: rgba(0,0,0,0.5);
+}
+
+.slider-controler li {
+margin: 0 0.5rem;
+display: inline-block;
+vertical-align: top;
+  list-style: none;
+}
+
+.slider-controler a {
+display: inline-block;
+vertical-align: top;
+text-decoration: none;
+color: white;
+font-size: 1.5rem;
+}
+.noticias_contenedor{
+display: grid;
+justify-content: center;
+grid-gap: 4rem;
+grid-template-columns: 50% 50%;
+
+overflow: hidden;
+margin: 4rem;
+padding: 4rem;
+}
+.contenedor_img{
+width: 100%;
+height: 100%;
+}
+.contenedor_img:hover{
+transform: rotateY(180deg);
+
+}
+.noticias_contenedor_SdAmorebieta{
+text-transform: uppercase;
+letter-spacing: .02em;
+padding-bottom: 1rem;
+font-size: x-small;
+color: rgba(64, 62, 62, 0.603);
+}
+.noticias_contenedor_text{
+font-weight: 700;
+padding-bottom: 2rem;
+
+}
+
+/*---------------------------FIN ACTUALIDAD -------------------------------*/
+
+
+
+
+/*-----------------------------RESPONSIVE-------------------------------------*/
+
+@media screen and (max-width:1283px) {
+
+  .imagen{
+    height: 250px;
+  }
+
+  .h1_home{
+    font-size: 80px;
+  }
+
+  /* ----Responsivo Zucelys---- */
+  .club_item, .contact form{
+    width: 90%;
+    padding-top: 0.5rem;
+  }
+
+  .clasification_item{
+    width: 45%;
+
+  }
+
+  .club{
+    background-image: linear-gradient(rgb(4, 4, 77), rgba(245, 245, 243,0)),
+       url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
+  }
+
+  .patrocinador {
+    width: 15rem;
+  }
+
+  .historia_home{
+    font-size:large;
+  }
+ 
+ }
+ /* ----FIN  Responsivo Zucelys---- */
+
+ /* Tablet */
+
+@media screen and (max-width:900px) {
+
+/* ----Responsivo GORKA---- */
+
+  .imagen{
+    height: 400px;
+  }
+  .item_flex{
+    width: 100%;
+  }
+  .h1_e{
+    font-size: 3rem;
+  }
+
+ /* ----FIN Responsivo GORKA---- */
+
+/* ----Responsivo NASREDDIN---- */
+
+
+  .estadio-imagen_historia {
+    display: grid;
+    grid-template-columns: auto auto ;
+
+
+  }
+  /* ----FIN Responsivo NASREDDIN---- */
+
+
+/* ----Responsive Zucelys---- */
+
+  #header {
+    background-position-x: center;  
+  }
+
+  .clasification_item,.actualidad_item, .club_item, .partidos_item, .contact form{
+    width: 90%;
+    padding-top: 0.5rem;
+  }
+
+  .club{
+    background-image: linear-gradient(rgb(4, 4, 77), rgba(245, 245, 243,0)),
+       url("https://sdamorebieta.eus/wp-content/uploads/2022/11/Amorebieta-Nucia-2--1200x800.jpg");
+  }
+
+  .contact_form{
+    padding-left: 5rem;
+  }
+
+  .equipo_enfrentado {
+    justify-content: center;
+}
+/* ----FIN  Responsive Zucelys---- */
+
+
+}
+
+
+/*Movil*/
+
+@media screen and (max-width: 640px) {
+
+
+  
+  /* ----Responsive Zucelys---- */
+  .h1_home{
+    font-size: 60px;
+  }
+
+  .h2_home {
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+ .foot__redes h2, .contact h2{
+    font-size: 1.15rem;
+
+  }
+
+ 
+  /* ----FIN Responsive Zucelys---- */
+
+
+ 
+  /* responsive acualidad*/
+.actualidad_h2{
+  font-size: 1.5rem;
+}
+.noticias_contenedor{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.text_slider{
+  bottom: 16vw; 
+}
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+  /* Responsive Gorka */
+  .h1_e{
+    font-size: 1.7rem;
+  }
+  /* FIN Responsive Gorka */
+
+
+  /* Responsive Zucelys */
+  .body_home{
+    font-size: 14px;
+  }
+
+  .h1_home{
+    font-size: 30px;
+  }
+
+  .logo{
+    position: relative;
+    width: 50%;
+  }
+
+  .logo_etiqueta {
+    gap: 0rem;
+  }
+
+  #menu {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .politicas{
+    width: 70%;
+    padding-left: 9rem;
+  }
+
+  .historia_home{
+    font-size:small;
+  }
+  .contact_form{
+    padding-left: 1rem;
+  }
+
+  .contact button[type=submit] {
+    width: 55%;
+  }
+
+  .contact input[type=text] {
+    width: 45%;
+  }
+
+  .imagen{
+    height: 200px;
+  }
+
+  .descripcion_equipos{
+    width: 45%;
+  }
+
+  .clasification_item{
+    height: 300px;
+  }
+
+ #menu nav {
+   padding-top: 0rem;
+   display: inline-block;
+  }
+  .checkbtn_menu{
+    display: block;
+  } 
+  .menu_item{
+    flex-direction: column;
+    gap: 0rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  #menu{
+    opacity: 1;
+  }
+
+  header{
+    z-index: 100;
+  }
+
+  .header2{
+    z-index: 100;
+    position: relative;
+  }
+
+  #menu nav ul li{
+    margin: 40px 0;
+    line-height: 30px;
+  }
+
+  #check_menu:checked ~ ul{
+    left:0;
+  } 
+
+  .logo_etiqueta2{
+    display: flex;
+  }
+/* FIN Responsive Zucelys */
+
+/* Edurne Responsive */
+.noticias_contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   margin: 0 auto;
+   padding-top: 2rem;
+ 
+  
+}
+
+
+
+.text_slider{
+  bottom: 14vw; 
+}
+  .equipo_enfrentado_span{
+    font-size: 1.5rem;
+  }
+
+  .club iframe{
+    height:100px;
+    position: relative;
+  }
+
+
+  }
+
+
+
+
+/*-----------------------------FIN RESPONSIVO-------------------------------------*/
