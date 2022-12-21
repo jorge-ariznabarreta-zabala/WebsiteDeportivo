@@ -54,10 +54,11 @@ a:hover {
 /*-----------------------------Header and Menu-------------------------------------*/
 
 #header {
-  background-image: url(./img/header-image.png);
+  /* background-image: url(./img/header-image.png); */
+  background-position-y: 20%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40rem;
+  height: 50rem;
 
 }
 
@@ -95,7 +96,6 @@ nav a:hover {
   display: none;
 }
 
-
 .logo{
     position: relative;
     width: 120%;
@@ -123,12 +123,6 @@ nav a:hover {
   font-size: 1.7rem;
 
 }
-
-/* .menu_item{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-} */
 
 .checkbtn_menu{
   font-size: 30px;
@@ -828,6 +822,10 @@ padding-bottom: 2rem;
     height: 250px;
   }
 
+  .h1_home{
+    font-size: 80px;
+  }
+
   /* ----Responsivo Zucelys---- */
   .club_item, .contact form{
     width: 90%;
@@ -884,6 +882,10 @@ padding-bottom: 2rem;
 
 /* ----Responsive Zucelys---- */
 
+  #header {
+    background-position-x: center;  
+  }
+
   .clasification_item,.actualidad_item, .club_item, .partidos_item, .contact form{
     width: 90%;
     padding-top: 0.5rem;
@@ -927,6 +929,8 @@ padding-bottom: 2rem;
     font-size: 1.15rem;
 
   }
+
+ 
   /* ----FIN Responsive Zucelys---- */
 
 
