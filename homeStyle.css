@@ -1053,6 +1053,11 @@ padding-bottom: 2rem;
     z-index: 100;
   }
 
+  .header2{
+    z-index: 100;
+    position: relative;
+  }
+
   #menu nav ul li{
     margin: 40px 0;
     line-height: 30px;
@@ -1077,6 +1082,9 @@ padding-bottom: 2rem;
  
   
 }
+
+
+
 .text_slider{
   bottom: 14vw; 
 }
