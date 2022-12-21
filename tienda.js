@@ -1,0 +1,2 @@
+let productos= {"Bermuda con bolsillo":30, "Camiseta entrenamiento":33, "Chaqueta chandal":53, "Pantalón":53, "Polo":33, "Camiseta Primera Equipacion":63, "Camiseta Segunda Equipacion":63, "Bidón":13, "Bufanda":18, "Llavero":8, "Paraguas":18, "Taza" :13, "Zapatillas":23};
+let pedido={"Bermuda con bolsillo":0, "Camiseta entrenamiento":0, "Chaqueta chandal":0, "Pantalón":0, "Polo":0, "Camiseta Primera Equipacion":0, "Camiseta Segunda Equipacion":0, "Bidón":0, "Bufanda":0, "Llavero":0, "Paraguas":0, "Taza" :0, "Zapatillas":0};
