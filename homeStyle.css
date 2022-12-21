@@ -197,12 +197,13 @@ nav a:hover {
 }
 
 .pic_actualidad:hover{
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
+  padding: 1rem;
 }
 .pic_actualidad {
   position: relative;
   width: 100%;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 .foto_actualidad{
   position: relative;
