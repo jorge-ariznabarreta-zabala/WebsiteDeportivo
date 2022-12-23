@@ -18,5 +18,5 @@ for (const key in pedido) {
 //console.log(totalPedido);    
 document.getElementById('total').innerHTML= totalPedido;
     };
-	<!--addEventlistener en JS-->
+	//addEventlistener en JS
     
