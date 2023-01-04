@@ -36,25 +36,9 @@ body {
   flex-direction: column;
 }
 
-.flex_body_item{
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
 /*-----------------------------Header and Menu-------------------------------------*/
 
 #header {
-  /* background-image: url(./img/header-image.png); */
   background-position-y: 20%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -979,14 +963,6 @@ padding-bottom: 2rem;
 
 @media screen and (max-width: 480px) {
 
-
-  /* Responsive Gorka */
-  .h1_e{
-    font-size: 1.7rem;
-  }
-  /* FIN Responsive Gorka */
-
-
   /* Responsive Zucelys */
   .body_home{
     font-size: 14px;
@@ -1091,6 +1067,12 @@ padding-bottom: 2rem;
     display: flex;
   }
 /* FIN Responsive Zucelys */
+
+  /* Responsive Gorka */
+  .h1_e{
+    font-size: 1.7rem;
+  }
+  /* FIN Responsive Gorka */
 
 /* Edurne Responsive */
 .noticias_contenedor{
